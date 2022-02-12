@@ -1,0 +1,3 @@
+﻿  test.c
+D:\C语言\2-12_C\2-12_C\test.c(16,9): warning C4477: “scanf”: 格式字符串“%d”需要类型“int *”的参数，但可变参数 1 拥有了类型“float *”
+  2-12_C.vcxproj -> D:\C语言\2-12_C\Debug\2-12_C.exe
