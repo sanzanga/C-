@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\C++\3-30_C++\3-30_C++\test.cpp(15,34): warning C4244: “+=”: 从“double”转换到“int”，可能丢失数据
+  3-30_C++.vcxproj -> D:\C++\3-30_C++\Debug\3-30_C++.exe
