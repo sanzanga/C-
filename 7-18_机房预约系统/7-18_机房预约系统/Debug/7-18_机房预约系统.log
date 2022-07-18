@@ -1,0 +1,9 @@
+﻿  computerRoom.cpp
+  Identity.cpp
+  manager.cpp
+  student.cpp
+D:\C++\7-18_机房预约系统\7-18_机房预约系统\student.cpp(105,20): warning C4018: “<”: 有符号/无符号不匹配
+  teacher.cpp
+  机房预约系统.cpp
+  正在生成代码...
+  7-18_机房预约系统.vcxproj -> D:\C++\7-18_机房预约系统\Debug\7-18_机房预约系统.exe
