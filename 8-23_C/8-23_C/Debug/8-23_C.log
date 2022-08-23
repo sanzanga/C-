@@ -1,0 +1,5 @@
+﻿  test.cpp
+D:\C++\8-23_C\8-23_C\test.cpp(49,10): warning C4101: “z”: 未引用的局部变量
+D:\C++\8-23_C\8-23_C\test.cpp(50,8): warning C4101: “RealPart”: 未引用的局部变量
+D:\C++\8-23_C\8-23_C\test.cpp(50,18): warning C4101: “ImagPart”: 未引用的局部变量
+  8-23_C.vcxproj -> D:\C++\8-23_C\Debug\8-23_C.exe
