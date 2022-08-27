@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            p{
+                color:blue;
+            }
+            *{
+                background-color: pink;
+            }
+            div{
+                font-size: 50px;
+            }
+            #wrap{
+                font-size: 100px;
+            }
+            span{
+                border: 10px solid blue;
+            }
+            .name{
+                border: 10px solid green;
+            }
+            .nav{
+                color:chartreuse;
+            }
+            #rec p{
+                color:chocolate;
+            }
+            #rec .nav{
+                color:firebrick;
+            }
+        </style>
+        <link href="./css/test.css" rel="stylesheet">
+    </head>
+    <body>
+    <!--网页的主体部分-->
+     <p style="color:red">我是一个p标签</p>
+     <p>我还是一个p标签</p>
+     <div>我是一个div标签</div>
+     <div  id="wrap">我还是一个div标签</div>
+     <span>我是一个span标签</span>
+     <span class="name">我还是一个span标签</span>
+     
+     <div id="rec">
+        <p class="nav">p标签</p>
+        <p>我是p2</p>
+     </div>
+    </body>
+</html>
