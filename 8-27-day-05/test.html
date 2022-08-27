@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                background-color: red;
+                width:500px;
+                height:200px;
+            }
+            p{
+                background-color: green;
+                width: 500px;
+                height:200px;
+                padding: 20px;
+                padding-bottom: 50;
+                padding-left: 100px;
+                padding-top: 150px;
+                padding-right: 200px;
+                padding: 20px 50px;/*上下  左右*/
+                padding: 50px 70px 100px;/*上 左右 上*/
+                padding: 200px 150px 100px 50px;/* 上 右 下 左*/  /*顺时针旋转*/
+                border: 5px solid black;
+                border-width: 10px;/*边框大小*/
+                border-style: dashed;/*边框样式：solid（实线）none（无边框，默认）dashed（虚线）dotted（点状线）*/
+                border-color: blue;/*边框颜色*/
+                /*
+                border-left左边框
+                border-right右边框
+                border-top上边框
+                border-bottom下边框
+                */
+                margin: 100px;
+            }
+            .box{
+                box-sizing: content-box;/*开启标准盒模型，可写可不写*/
+                width: 200px;
+                height: 50px;
+                padding: 50px;
+                border: 10px solid blue;
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+     <div></div>
+     <p>我是p标签</p>
+     <div class="box"></div>
+    </body>
+</html>
