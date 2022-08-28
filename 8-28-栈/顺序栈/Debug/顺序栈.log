@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\C++\8-28-栈\顺序栈\test.cpp(97,12): warning C4101: “top”: 未引用的局部变量
+D:\C++\8-28-栈\顺序栈\test.cpp(54): warning C4715: “GetTop”: 不是所有的控件路径都返回值
+  顺序栈.vcxproj -> D:\C++\8-28-栈\Debug\顺序栈.exe

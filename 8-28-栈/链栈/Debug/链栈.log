@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\C++\8-28-栈\链栈\test.cpp(63): warning C4715: “GetTop”: 不是所有的控件路径都返回值
+  链栈.vcxproj -> D:\C++\8-28-栈\Debug\链栈.exe

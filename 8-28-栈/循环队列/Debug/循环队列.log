@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\C++\8-28-栈\循环队列\test.cpp(55): warning C4715: “GetHead”: 不是所有的控件路径都返回值
+  循环队列.vcxproj -> D:\C++\8-28-栈\Debug\循环队列.exe

@@ -1,0 +1,4 @@
+﻿  test.cpp
+D:\C++\8-28-栈\链队\test.cpp(65,11): warning C4553: “==”: 未使用表达式结果；是否打算使用“=”?
+D:\C++\8-28-栈\链队\test.cpp(75): warning C4715: “GetHead”: 不是所有的控件路径都返回值
+  链队.vcxproj -> D:\C++\8-28-栈\Debug\链队.exe
