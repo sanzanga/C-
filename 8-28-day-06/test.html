@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                margin-top: 50px;
+                border: 5px solid black;
+                margin-bottom: 100px;
+            }
+            div p{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                margin-top:50px ;
+
+                overflow: hidden;
+                overflow: scroll;
+                overflow: auto;
+                overflow: visible;
+            }
+            p{
+                width: 150px;
+                height: 150px;
+                background-color: aqua;
+                margin-top: 100px;
+            }
+            .wrap{
+                width: 200px;
+                height: 200px;
+                background-color: black;
+            }
+            .wrap h1{
+                width: 200px;
+                height: 0;
+                overflow: hidden;
+                background-color: yellow;
+            }
+            .wrap:hover h1{
+                height: 150px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+     <div>
+        <p>
+            我是p1数据画到付多所草句哈擦多所绿错多付是的空间多军军扩扩扩扩扩扩扩扩扩扩扩
+        </p>
+     </div>
+     <br><!-- 或者用<span>ffff</span>进行占位-->
+     <p>我是p2</p>
+     <div class="wrap">
+        <h1></h1>
+     </div>
+    </body>
+</html>
