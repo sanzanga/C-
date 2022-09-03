@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                border-radius: 50%;
+                background: 
+                
+                linear-gradient(to right,white 50%,black 50%);
+
+            }
+            .p1{
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                border-radius: 50%;
+                background: radial-gradient(50% 50% at 50% 25%,white 12.5%,black 12.5%,black 50%,transparent 50%),radial-gradient(50% 50% at 50% 75%,black 12.5%,white 12.5%,white 50%,transparent 50%),
+                linear-gradient(to left ,black 50%,white 50%);
+
+                /*
+                background: radial-gradient(50% 50% at 50% 25%,white 12.5%,black 12.5%,black 50%,transparent 50%),
+                第一个值是水平大小，第二个值是垂直大小at，第三个值是水平摆放位置，第四个值是垂直摆放距离，从0%到12.5%是白色，从12.5%到50%是黑色，从50%到100%是透明色
+                */
+            }
+            .p2{
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                background:repeating-linear-gradient(45deg,blue 0px,blue 20px ,yellow 20px,yellow 40px);
+                /*
+                线性渐变重复
+                */
+                background: repeating-radial-gradient();
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div></div>
+        <p class="p1"></p>
+        <p class="p2"></p>
+    </body>
+</html>

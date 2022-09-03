@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 300px;
+                height: 300px;
+                border: 2px solid red;
+                /* border-radius: 15px;
+                border-radius: 50%;
+                border-radius: 50% 25%;
+                border-radius: 50% 25% 20%;
+                border-radius: 50% 25% 20% 70%; */
+
+                border-top-left-radius: 50%;
+
+                box-shadow: 10px 20px;
+                box-shadow: 10px 20px 10px;/*第三个参数是模糊距离*/
+                box-shadow: 10px 20px 10px 5px;/*第四个参数是扩散距离*/
+                box-shadow: 10px 20px 10px 5px yellow;/*第五个参数设置阴影的颜色*/
+                
+            }
+            div:hover{
+                box-shadow: 10px 20px 10px 5px yellow inset;/*第六个参数设置阴影扩散是向内还是向外的*/
+
+                opacity: .5;
+                /*取值是0~1之间，0完全透明，1完全不透明，.5透明度就是百分之五十*/
+
+                cursor: crosshair;
+                cursor: text;
+                cursor: pointer;
+                cursor: wait;
+                cursor:help;
+                cursor:e-resize;
+                cursor:w-resize;
+                cursor: n-resize;
+                cursor: s-resize;
+                cursor: ne-resize;
+                cursor: url("../9-2-day-10作业/face.png"),default;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div>
+
+        </div>
+    </body>
+</html>

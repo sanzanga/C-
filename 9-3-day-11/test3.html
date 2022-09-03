@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 400px;
+                height: 400px;
+                border: 1px solid red;
+                background:linear-gradient(red 0%,red 30%,blue 50%);
+                /* 从背景的0%到30%都是红色，从30%到50%是红蓝的渐变，50%之后就单纯是蓝色*/
+                background:linear-gradient(red 0px,red 200px,blue 300px);
+                /*从0px到200px是红色，从200px到300px是一个红蓝渐变，300px到400px是蓝色*/
+
+                background: linear-gradient(red,orange,yellow,blue,purple,green);/*彩虹色*/
+
+                background: linear-gradient(to bottom, red,orange,yellow,blue,purple,green);/*彩虹色*//*向下*/
+
+                background: linear-gradient(to top, red,orange,yellow,blue,purple,green);/*彩虹色*//*向上*/
+
+                background: linear-gradient(to left, red,orange,yellow,blue,purple,green);/*彩虹色*//*向左*/
+
+                background: linear-gradient(to right, red,orange,yellow,blue,purple,green);/*彩虹色*//*向右*/
+
+                background: linear-gradient(to left bottom, red,orange,yellow,blue,purple,green);/*彩虹色 /*向左下角 */
+
+                background: linear-gradient(45deg, red,orange,yellow,blue,purple,green);/*彩虹色*/ /*45deg——45度*/
+
+                border-radius: 50%;                
+            }
+            .p2{
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                background: radial-gradient(red,blue);
+                background: radial-gradient(red 50%,blue 50%);
+                /*0~50%是红色 50%~100%是蓝色*/
+                background: radial-gradient(35% 45% at 50px 100px, red 50%,blue 50%);
+                /*35%的水平大小，45%的垂直大小，50px是水平圆心位置，100px是垂直圆心位置*/
+
+            }
+            .p2{
+                width: 300px;
+                height: 300px;
+                border: 1px solid red;
+                /* background: radial-gradient(circle closest-corner at center,red,orange,yellow,green,aqua,blue,purple); */ /*正圆圆心在中间*/
+                background: radial-gradient(50% 50% at bottom , red,orange,yellow,green,aqua,blue,purple); 
+                /*at bottom就是圆心的在下面*/
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div></div>
+        <p class="p1"></p>
+        <p class="p2"></p>
+    </body>
+</html>
