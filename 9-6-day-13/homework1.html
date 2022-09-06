@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .bigBox{
+                height: 75px;
+                background-image: url("./topbg.jpg");
+            }
+            .picBox{
+                /* background-image: url("./weixin.png"); */
+                float: left;
+                margin-left: 470px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            a{
+                text-decoration: none;
+                height: 75px;
+                line-height: 75px;
+                color: white;
+                float: left;
+                width: 100px;
+                text-align: center;
+             }
+            .active, a:hover{
+                background-image: url("./btn2.png");
+                background-repeat: no-repeat;
+                background-position: 0 22px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <div class="picBox">
+                <img src="./weixin.png" alt="">
+            </div>
+            <a href="#" class="active">首页</a>
+            <a href="#">帮助</a>
+            <a href="#">公众</a>
+            <a href="#">微信</a>
+            <a href="#">支付</a>
+            <a href="#">网页版</a>
+            <a href="#">表情</a>
+            <a href="#">广告</a>
+        </div>
+    </body>
+</html>
