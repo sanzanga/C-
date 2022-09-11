@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .bigBox{
+                width: 165px;
+                height: 430px;
+                border: 1px solid black;
+                position: fixed;
+                /* top:200px; */
+                /* right: 0; */
+                left:50px;
+            }
+            .topPo{
+                width: 165px;
+                height: 169px;
+                background-image: url("./fdTop.png");
+            }
+            .bottomPo {
+                margin-left:18px ;
+                width: 110px;
+                height: 260px;
+                background-image: url("./fdBottom.png");
+            }
+            .topPo .ewm{
+                width: 80px;
+                margin-left: 33px;
+                margin-right: 33px;
+                margin-top: 8px;
+            }
+            .topPo .close{
+                margin-left: 100px;
+            }
+            .topPo p{
+                font-size: 13px;
+                color: white;
+                margin-left: 33px;
+                margin-top: 1px;
+            }
+            .bigBox img{
+                /* margin-top: 38px; */
+                margin-left: 10px;
+                vertical-align: middle;
+            }
+            span{
+                color: white;
+                font-size: 13px;
+                margin-top: 8px;
+            }
+            .bottomPo p{
+                font-size: 13px;
+                color: white;
+                text-align: center;
+                margin-top: 15px;
+            }
+            .picBox{
+                height: 40px;
+                line-height: 42px;
+            }
+            .bottomPo .line{
+                margin-top: -42px;
+            }
+            .bottomPo .top{
+                margin-left: 45px;
+            }
+            .bottomPo .textTop{
+                margin-top: 0;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <div class="topPo">
+                <!-- <img src="./fdTop.png"> -->
+                <img src="./close.png" class="close">
+                <img src="./ewm.png" class="ewm">
+                <p>微信优惠购票</p>
+            </div>
+            <div class="bottomPo">
+                <!-- <img src="./fdBottom.png"> -->
+                <div class="picBox">
+                    <img src="./qq.png">
+                    <span>景区咨询</span>
+                    <img src="./line.png" class="line">
+                </div>
+                <div class="picBox">
+                    <img src="./qq.png">
+                    <span>连锁咨询</span>
+                    <img src="./line.png" class="line">
+                </div>
+                <div class="picBox">
+                    <img src="./qq.png">
+                    <span>客服咨询</span>
+                    <img src="./line.png" class="line">
+                </div>
+                <div class="picBox">
+                    <img src="./qq.png">
+                    <span>客服咨询</span>
+                    <img src="./line.png" class="line">
+                </div>
+                <p>景区连锁咨询
+                    13711111111</p>
+                <img src="./fdToTop.png" class="top">
+                <p class="textTop">Top</p>
+            </div>
+        </div>
+    </body>
+</html>

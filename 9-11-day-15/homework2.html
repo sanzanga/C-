@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            .bigBox{
+                /* margin-top: 156px; */
+                height: 300px;
+                background-color: #441b79;
+                position: relative;
+                top: 156px;
+            }
+            .textBox{
+                position: absolute;
+                top: -50px;
+                left:75px;
+                background-color: #0477c0;
+                width: 220px;
+                height: 476px;
+            }
+            .bigBox .textBox p {
+                color: white;
+                font-size: 17px;
+                line-height: 50px;
+                background-color: #188eee;
+                padding-top: 20px;
+                padding-left: 14px;
+                padding-bottom: 10px;
+                float: left;
+            }
+            .bigBox .textBox .title i{
+                height: 2px;
+                width: 18px;
+                display: block;
+                margin-bottom: 5px;
+                background-color: white;
+            }
+            .bigBox .textBox .course {
+                color: white;
+                font-size: 17px;
+                line-height: 50px;
+                background-color: #188eee;
+                padding: 0;
+                padding-left: 19px;
+                margin-top: 1px;
+                width: 169px;
+            }
+            .bigBox .detailBox{
+                position: absolute;
+                top: 0px;
+                left:75px;
+            }
+            .bigBox ul li{
+                width: 204px;
+                list-style: none;
+                font-size: 17px;
+                color: white;
+                padding-left: 15px;
+                height: 57px;
+                margin-top: 13px;
+                position: relative;
+                border-bottom: 1px solid #1681c4;
+            }
+            ul li i{
+                position: absolute;
+                right: 17px;
+                color: #84b7d9;
+            }
+            ul li .p2{
+                margin-top: 8px;
+                margin-bottom: 13px;
+                font-size: 13px;
+                color: #84b7d9;
+            }
+            .colorBox{
+                position: absolute;
+                top: -13px;
+                left: 218px;
+                width:978px ;
+                /* height: 422px; */
+                height: 0;
+                /* background-color: red; */
+                /* border: 2px solid #1681c4; */
+                overflow: hidden;
+            }
+            li:hover .colorBox1{
+                height: 422px;
+                background-color: yellow;
+                border: 2px solid #1681c4;
+            }
+            li:hover .colorBox2{
+                height: 422px;
+                background-color: red;
+                border: 2px solid #1681c4;
+                top: -83px;
+            }
+            li:hover .colorBox3{
+                height: 422px;
+                background-color: green;
+                border: 2px solid #1681c4;
+                top: -153px;
+            }
+            li:hover .colorBox4{
+                height: 422px;
+                background-color: pink;
+                border: 2px solid #1681c4;
+                top: -233px;
+            }
+            li:hover .colorBox5{
+                height: 422px;
+                background-color: orange;
+                border: 2px solid #1681c4;
+                top: -303px;
+            }
+            li:hover .colorBox6{
+                height: 422px;
+                background-color: peru;
+                border: 2px solid #1681c4;
+                top: -373px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <div class="textBox">
+                <p class="title">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </p>
+                <p class="course">全部课程</p>
+            </div>
+            <div class="detailBox">
+                <ul>
+                    <li class="li1">
+                        <p>
+                            <span>IT.互联网</span>
+                            <i>></i>
+                            <div  class="p2">前段开发 Linux运维</div>
+                        </p>
+                        <div class="colorBox1 colorBox"></div>
+                    </li>
+                    <li  class="li2">
+                        <p>
+                            <span>语言.留学</span>
+                            <i>></i>
+                            <p  class="p2">实用口语雅思托福</p>
+                        </p>
+                        <div class="colorBox2 colorBox">
+                        </div>
+                    </li>
+                    <li class="li3">
+                        <p>
+                            <span>设计.创作</span>
+                            <i>></i>
+                            <p  class="p2">平面设计 游戏美术设计 CAD</p>
+                        </p>
+                        <div class="colorBox3 colorBox"></div>
+                    </li>
+                    <li class="li4">
+                        <p>
+                            <span>职业.考证</span>
+                            <i>></i>
+                            <p  class="p2">公务员教师考试建造工程</p>
+                        </p>
+                        <div class="colorBox4 colorBox"></div>
+                    </li>
+                    <li  class="li5">
+                        <p>
+                            <span>升学.考研</span>
+                            <i>></i>
+                            <p  class="p2">考研大学高中初中</p>
+                        </p>
+                        <div class="colorBox5 colorBox"></div>
+                    </li>
+                    <li  class="li6">
+                        <p>
+                            <span>兴趣.生活</span>
+                            <i>></i>
+                            <p  class="p2">摄影乐器美妆育儿</p>
+                        </p>
+                        <div class="colorBox6 colorBox"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
