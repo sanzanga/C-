@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            /* 子关系选择器 */
+            ul>li{
+                /*>就是子元素选择器，ul>li意思就是会选中ul下面的所有li标签*/
+                color: red;
+            }
+
+            /* 兄弟选择器 */
+            li+li{
+                /*li+li相邻兄弟选择器，会选择紧挨着li标签的li标签*/
+                background-color: pink;
+            }
+            li~li{
+                /*关联选择器，会选择li旁边的所有的li*/
+                font-size: 50px;
+            }
+            
+            /* 属性选择器 */
+            [target]{
+                /*选择所有属性名叫做target的标签*/
+                background-color: green;
+            }
+            [class]{
+                /*选择所有属性名为class的标签*/
+                background-color: red;
+            }
+            [class="ab"]{
+                /* 选择所有属性名为class，值为ab的元素 */
+                background-color: aquamarine;
+            }
+            [class*="b"]{
+                /* 选择所有选择器名为class，且值包含b的标签 */
+                background-color: blue;
+            }
+            [class$="b"]{
+                /* 选择所有选择器名为class，且值以b结尾的元素 */
+                background-color: chocolate;
+            }
+            [class^="a"]{
+                /* 选择所有选择器名为class，且以a开头的元素 */
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div>
+            <ul>
+                <li class="abc">1</li>
+                <li class="ac">2</li> 
+                <span>7</span><!--ul里面只能包含li标签，这样写不规范，只是为了做案例-->
+                <li class="ab">3</li>
+                <li class="abcd">4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+        </div>
+        <a href="#" target="_parent">hhhh</a>
+    </body>
+</html>

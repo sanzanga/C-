@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .bigBox{
+                width: 712px;
+                height: 463px;
+                background-color: #e6eaf2 ;
+                margin-top: 45px;
+                margin: auto;
+            }
+            .bigBox .title{
+                color: white;
+                height: 52px;
+                line-height: 52px;
+                background-color: #4576b4;
+                text-align: center;
+            }
+            .bigBox table .chapter{
+                width: 122px;
+                text-align: center;
+            }
+            .bigBox table .detail{
+                width: 592px;
+            }
+            .bigBox table tr{
+                height: 35px;
+            }
+            .bigBox table tr td{
+                font-weight: bold;
+            }
+            .activeColor{
+                background-color: #c9d2e4;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <p class="title">《课程一》静态网站开发</p>
+            <table>
+                <tr class="activeColor">
+                    <td class="chapter">第一章</td>
+                    <td class="detail">《基础班》开学典礼</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">（互联网概述|什么是网站|什么是网页|构成网页的元素|网页制作流程详解|怎么样才能学好拿高薪|WEB前端开发职业的前途|WEB前端开发课程目标及）</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="activeColor">
+                    <td class="chapter">第二章</td>
+                    <td class="detail">HTML常用标签+背景</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr class="activeColor">
+                    <td class="chapter">第三章</td>
+                    <td class="detail">元素选择符+特殊符号</td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                    <td></td>
+                </tr>
+                <tr class="activeColor">
+                    <td class="chapter" rowspan="3">第四章</td>
+                    <td class="detail">CSS样式(Font+Text)+特殊符号</td>
+                </tr>
+                <tr class="activeColor" >
+                    <td>特殊符号</td>
+                </tr> 
+                <tr  class="activeColor">
+                    <td>(Font+Text)</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

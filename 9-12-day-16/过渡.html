@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 200px;
+                height: 100px;
+                background-color: red;
+                transition: 2s;
+                /* 过渡属性transition 过程设置为两秒 */
+                transition: background-color 2s,height 3s;
+                /* 背景颜色通过两秒完成，高度通过3s完成 */
+                transition-timing-function:ease ;
+                transition-timing-function: linear;
+                transition-timing-function:ease-in;
+                transition-timing-function: ease-out;
+                transition-timing-function: ease-in-out;
+                /* transition-timing-function: cubic-bezier(1,42,0,77); */
+                transition-delay: 2s;
+                /* 两秒之后再执行效果 */
+                /* 
+                    transition过渡
+                        transition-property 过渡属性名，默认情况下是all
+                        transition-duration 过渡的时长，默认为0，不写就没有意义了
+                        transition-timing-function：由慢变快， 默认为ease
+                            linear由慢开始至结束
+                            ease-in:慢速开始的过渡
+                            ease-out：慢速结束的过渡
+                            ease-in-out:慢速开始慢速结束
+                            cubic-bezier()贝塞尔曲线
+                        transition-delay延迟效果，延迟过久开始执行
+                */
+            }
+            div:hover{
+                background-color: blue;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div>
+
+        </div>
+    </body>
+</html>

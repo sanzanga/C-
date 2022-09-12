@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .bigBox{
+                width: 600px;
+                height: 731px;
+                background-color: #515151;
+                margin: auto;
+            }
+            .bigBox .title{
+                font-size: 24px;
+                color: white;
+                padding-top: 21px;
+                text-align: center;
+                font-weight: bold;
+            }
+            .bigBox legend{
+                color: white;
+                font-size: 17px;
+            }
+            .bigBox fieldset,legend{
+                margin-left: 20px;
+                margin-top: 21px;
+                margin-right: 20px;
+            }
+            table{
+                color: white;
+                font-size: 17px;
+            }
+            .name{
+               padding-left: 12px;
+               padding-right: 12px;
+            }
+            .nameActive{
+                padding-right: 0px;
+            }
+            input{
+                height: 22px;
+            }
+            .inputActive{
+                width: 410px;
+            }
+            .bigBox tr{
+                height: 46px;
+                height: 46px;
+            }
+            select{
+                width: 172px;
+            }
+            .last1{
+                padding-right: 0;
+                padding-left: 0;
+                width: 60px;
+            }
+            .last2{
+                padding-right: 0;
+                width: 100px;
+            }
+            .buttonBox{
+                padding-left: 268px;
+                padding-top: 8px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <p class="title">增加快递信息</p>
+            <form action="">
+                <fieldset>
+                    <legend>发货单</legend>
+                    <table>
+                        <tr>
+                            <td class="name"  style="padding-top: 19px;">发货人：</td>
+                            <td  style="padding-top: 21px;">
+                                <input type="text">
+                            </td>
+                            <td class="name" style="padding-top: 19px;">地址：</td>
+                            <td style="padding-top: 21px;">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" style="padding-top: 20px; padding-bottom: 20px;">电话：</td>
+                            <td style="padding-top: 20px;  padding-bottom: 20px;">
+                                <input type="text">
+                            </td>
+                            <td class="name" style="padding-top: 20px; padding-bottom: 20px;">邮编：</td>
+                            <td style="padding-top: 20px; padding-bottom: 20px;">
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>收货单</legend>
+                    <table>
+                        <tr>
+                            <td class="name"  style="padding-top: 19px;">收货人：</td>
+                            <td  style="padding-top: 21px;">
+                                <input type="text">
+                            </td>
+                            <td class="name" style="padding-top: 19px;">地址：</td>
+                            <td style="padding-top: 21px;">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" style="padding-top: 20px; padding-bottom: 20px;">电话：</td>
+                            <td style="padding-top: 20px;  padding-bottom: 20px;">
+                                <input type="text">
+                            </td>
+                            <td class="name" style="padding-top: 20px; padding-bottom: 20px;">邮编：</td>
+                            <td style="padding-top: 20px; padding-bottom: 20px;">
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" style="padding-top: 0px; padding-bottom: 20px;">地区：</td>
+                            <td style="padding-top: 0px;  padding-bottom: 20px;">
+                                <select name="" id="">
+                                    <option selected>北京</option>
+                                    <option>上海</option>
+                                    <option>浙江</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" style="padding-top: 0px; padding-bottom: 20px;">地区：</td>
+                            <td style="padding-top: 0px;  padding-bottom: 20px; " class="checkBox" colspan="2">
+                                <input type="checkbox" name="baozhaung" value="纸箱">纸箱
+                                <input type="checkbox" name="baozhaung" value="纸箱">快递袋
+                                <input type="checkbox" name="baozhaung" value="纸箱">木箱
+                                <input type="checkbox" name="baozhaung" value="纸箱">其他
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name nameActive" style="padding-top: 0px; padding-bottom: 20px;">付款方式：</td>
+                            <td style="padding-top: 0px;  padding-bottom: 20px; " class="checkBox" colspan="2">
+                                <input type="radio" name="payway" value="纸箱">现金
+                                <input type="radio" name="payway" value="纸箱">支付宝
+                                <input type="radio" name="payway" value="纸箱">网银
+                                <input type="radio" name="payway" value="纸箱">ATM
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <fieldset>
+                    <legend>货物信息</legend>
+                    <table>
+                        <tr>
+                            <td class="name"  style="padding-top: 19px;">货物名称：</td>
+                            <td  style="padding-top: 21px;" colspan="9">
+                                <input type="text" class="inputActive">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name" style="padding-top: 20px; padding-bottom: 20px;">数量：</td>
+                            <td style="padding-top: 20px;  padding-bottom: 20px;"  class="last1">
+                                <input type="text" style="width: 40px;padding-right: 0;">
+                            </td>
+                            <td class="name last1" style="padding-top: 20px; padding-bottom: 20px;">重量：</td>
+                            <td style="padding-top: 20px;  padding-bottom: 20px;">
+                                <input type="text" style="width: 40px;padding-right: 0;">
+                            </td>
+                            <td class="name last1 last2" style="padding-top: 20px; padding-bottom: 20px;width: 90px;">发货时间：</td>
+                            <td style="padding-top: 20px;  padding-bottom: 20px;">
+                                <input type="text" style="width: 145px;">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <div class="buttonBox">
+                    <button>确定</button>
+                    <button>取消</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

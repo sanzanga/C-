@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            ul li:nth-child(2){
+                /* 选中ul下面的第二个li元素，如果第二个不是li的话，不会展示任何效果 */
+                background-color: red;
+            }
+            ul li:nth-of-type(2){
+                /* 选中ul下面的第二个li元素，如果第二个不是li，会直接忽视，选中下一个li标签 */
+                background-color: yellow;
+            }
+            ul li:nth-last-child(4){
+                /* 选中li第4个li，如果第4个不是li，则不会展示任何效果，注意的是这个是反着书的 */
+                background-color: red;
+            }
+            ul li:nth-last-of-type(1){
+                /* 选中ul下面的第二个li元素，如果第二个不是li，会直接忽视，选中下一个li标签，这个也是反着数的 */
+                background-color: blue;
+            }
+            ul li:first-child{
+                /* 选中列表中的第一个li元素，如果第一个元素不是li元素，就不会呈现任何效果 */
+                background-color: chartreuse;
+            }
+            div p:first-child{
+                background-color: yellow;
+            }
+            ul li:last-child{
+                /* 选中ul列表当中最后一个li元素，如果最后一个元素不是li元素，则就不会执行 */
+                background-color: blanchedalmond;
+            }
+            div p:last-child{
+                background-color: yellow;
+            }
+            ul li:nth-child(odd){
+                /* 选中列表中所有的奇元素odd */
+                font-size: 50px;
+            }
+            ul li:nth-child(even){
+                /* 选中ul列表当中所有的偶元素even */
+                color: blueviolet;
+            }
+            ul li:nth-child(2n+1){
+                /* n是从0开始取，然后是1、2、....这些，然后进行计算，选中计算后得到的第几个元素 */
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div>
+            <h1>2</h1>
+            <p>3</p>
+            <h2>7</h2>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            a:link{
+                /* link只能给a标签使用 */
+                /* a标签未被访问的时候，所呈现出来的颜色，当访问后，其颜色就会发生改变 */
+                color: red;
+            }
+            a:hover{
+                /* 鼠标移上去的状态 */
+                background-color: pink;
+            }
+            a:visited{
+                /* a标签被访问后，所呈现出来的状态，也只能给a标签使用 */
+                color: aqua;
+            }
+            a:active,div:active{
+                /* 点击时的状态 */
+                color: blueviolet;
+            }
+
+            input:focus{
+                /* 获取焦点，当鼠标点击文本框的时候，会呈现出来的状态 */
+                /* outline:0;去掉默认焦点的边框线 */
+                outline: 0;
+                border: 4px solid orange;
+            }
+           
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <a href="http:www.abc.com">abc</a>
+        <a href="http:www.ac.com">ac</a>
+        <div>我真的很好</div>
+
+        <form>
+            <input type="text">姓名
+            <input type="checkbox">纸箱
+            <!-- 在多选框种加上checked就是默认选中状态 -->
+            <input type="checkbox" checked>纸箱
+            <input type="checkbox">纸箱
+        </form>
+    </body>
+</html>
