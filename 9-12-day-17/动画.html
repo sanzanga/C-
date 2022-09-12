@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>动画</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                animation: color 3s linear 3s infinite alternate;
+                /* 3s完成所有的操作，最终会恢复原始的状态 */
+                /* 
+                    animation-name自定义动画的名称（也就是上面的第一个参数）
+                    animation-duration动画时长（第二个参数）
+                    animation-timing0function动画曲线，跟transition-timing-function取值一样
+                    animation-delay动画延迟时长
+                    animation-iteration-count动画循环：默认是1(设置具体的值，就是相应的循环几遍) infinite无限循环
+                    animation-direction动画反向播放:使用前提：循环次数不能小于2，反向值是alternate
+                 */
+
+                /* 规定动画播放之前或者播放之后的展示 */
+                 animation-fill-mode: none;
+                 /* 默认情况，不改变默认行为（在deley期间保持初始状态，默认完成又回到初始状态 */
+                 animation-fill-mode: forwards;
+                 /* 动画播放完成后，保持最后一帧的效果，如果循环两边，也就是最后保持在第一帧的状态 */
+                 animation-fill-mode:backwards ;
+                 /* 在animation-delay所指定的一段时间内，在动画显示之前，应用开始的属性，也就是第一帧的状态 */
+                 animation-fill-mode: both;
+                 /* 开始与结束都在第一帧 */
+            }
+            /* 初始值和第一帧是有区别的 */
+            
+            /* 关键帧数 */
+            @keyframes color {
+                /* identifier关键帧的名字 */
+                0%{
+                    /* 百分之几是相较于自己设置的几秒 */
+                    /* 0%是第一帧 */
+                    width: 0;
+                }
+                20%{
+                    /* 20%是第二帧 */
+                    width: 300px;
+                    background-color: yellow;
+                }
+                50%{
+                    /* 50%是第三帧 */
+                    width: 400px;
+                    background-color: pink;
+                }
+                100%{
+                    /* 100%是第四帧 */
+                    width: 600px;
+                    background-color: blueviolet;
+                }
+                /* 上面代表有四帧 */
+            }
+
+            /* 暂停动画，要配合伪类来使用hover和active，也可以配合JavaScript使用 */
+            div:hover{
+                /* 当鼠标移上去的时候，就可以暂停动画 */
+                animation-play-state:paused ;
+            }
+            div:active{
+                /* 当点击动画的时候，就可以暂停动画 */
+                animation-play-state:paused ;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div></div>
+    </body>
+</html>

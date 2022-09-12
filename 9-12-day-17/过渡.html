@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+                transition: width 3s ease 2s,background-color 2s ease 1s;
+                /* 
+                    transition-property过渡效果名（给谁设置效果）
+                    transition-duration过渡时长（这个效果时长）
+                    transition-timing-function过渡曲线
+                    transition-delay延迟过渡的时长
+                 */
+                 /* 
+                    transition这个数要给确切的数值到数值，或者颜色值到颜色
+                    过渡没有循环
+                  */
+            }
+            div:hover{
+                width: 500px;
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div></div>
+    </body>
+</html>
