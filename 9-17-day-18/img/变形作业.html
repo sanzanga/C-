@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .box{
+                margin:100px auto;
+                width: 190px;
+                height: 190px;
+                /* border: 1px solid black; */
+                transform-style: preserve-3d;
+                animation: die 5s infinite;
+            }
+            .box div{
+                height: 190px;
+                width: 190px;
+                border: 1px solid black;
+                position: absolute;
+                border-radius: 5px;
+                top: 100px;
+                left: auto;
+                text-align: center;
+                line-height: 190px;
+            }
+            .box .Box1{
+                transform: translateZ(95px);
+            }
+            .box .Box6{
+                transform: translateZ(-95px);
+            }
+            .box .Box2{
+                transform: translateX(95px) rotateY(90deg);
+                /* transform: rotateY(-90deg); */
+            }
+            .box .Box5{
+                transform: translateX(-95px) rotateY(90deg);
+                /* transform: rotateY(-90deg); */
+            }
+            .box .Box3{
+                transform: translateY(95px) rotateX(90deg);
+                /* transform: rotateY(-90deg); */
+            }
+            .box .Box4{
+                transform: translateY(-95px) rotateX(90deg);
+                /* transform: rotateY(-90deg); */
+            }
+            @keyframes die {
+                100%{
+                    transform: rotate3d(1,1,1,360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="box">
+            <div class="Box1 Box">
+                <img src="../img/1.png" alt="">
+            </div>
+            <div class="Box2 Box">
+                <img src="../img/2.png" alt="">
+            </div>
+            <div class="Box3 Box">
+                <img src="../img/3.png" alt="">
+            </div>
+            <div class="Box4 Box">
+                <img src="../img/4.png" alt="">
+            </div>
+            <div class="Box5 Box">
+                <img src="../img/5.png" alt="">
+            </div>
+            <div class="Box6 Box">
+                <img src="../img/6.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>

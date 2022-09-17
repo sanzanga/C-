@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: #eee;
+            }
+            .bigBox{
+                margin:50px;
+                width: 120px;
+                height: 180px;
+                background-color: white;
+                border-radius: 5px;
+            }
+            ul{
+                list-style: none;
+                overflow: hidden;
+            }
+            ul li{
+                background: url("./13-1\ \(1\).png") no-repeat;
+                background-position: 0px -863px;
+                width: 200px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                margin-left: 10px;
+                transition: 0.4s;
+
+            }
+            ul li p{
+                margin-left: 20px;
+                background: url("./13-1\ \(1\).png") no-repeat;
+                background-position: 100px -821px;
+                /* 68px */
+                transition: 0.6s;
+            }
+           
+            li:hover{
+                background-position: 8px -863px;
+            }
+            li:hover p{
+                background-position: 65px -821px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <ul>
+                <li>
+                    <p>连载动画</p>
+                </li>
+                <li>
+                    <p>完结动画</p>
+                </li>
+                <li>
+                    <p>咨询</p>
+                </li>
+                <li>
+                    <p>官方延伸</p>
+                </li>
+                <li>
+                    <p>新番时间表</p>
+                </li>
+                <li>
+                    <p>番剧索引</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
