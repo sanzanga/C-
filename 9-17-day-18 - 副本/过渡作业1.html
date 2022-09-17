@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background: url("./bg.webp") no-repeat;
+            }
+            .bigBox{
+                width: 780px;
+                height: 240px;
+                /* border: 1px solid red; */
+                margin: 350px auto;
+                position: relative;
+            }
+            .bigBox .s{
+                width: 200px;
+                height: 180px;
+                background: url("./1.png") no-repeat;
+                animation: s 1s steps(8) infinite;
+                float: left;
+            }
+            @keyframes s {
+                0%{
+                    background-position: 0px;
+                }
+                100%{
+                    background-position: -1600px;
+                }
+            }
+            .bigBox .p{
+                width: 200px;
+                height: 180px;
+                background: url("./2.png") no-repeat;
+                animation: p 1s steps(8) infinite;
+                float: left;
+            }
+            @keyframes p {
+                0%{
+                    background-position: 0px;
+                }
+                100%{
+                    background-position: -1600px;
+                }
+            }
+            .bigBox .t{
+                width: 170px;
+                height: 240px;
+                background: url("./3.png") no-repeat;
+                animation: t 1s steps(8) infinite;
+                position: absolute;
+                left: 400px;
+                top: -40px;
+                float: left;
+            }
+            @keyframes t {
+                0%{
+                    background-position: 0px;
+                }
+                100%{
+                    background-position: -1360px;
+                }
+            }
+            .bigBox .l{
+                width: 210px;
+                height: 200px;
+                background: url("./4.png") no-repeat;
+                animation: l 1s steps(8) infinite;
+                position: absolute;
+                left: 570px;
+                float: left;
+            }
+            @keyframes l {
+                0%{
+                    background-position: 0px;
+                }
+                100%{
+                    background-position: -1680px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div class="bigBox">
+            <div class="s"></div>
+            <div class="p"></div>
+            <div class="t"></div>
+            <div class="l"></div>
+        </div>
+    </body>
+</html>
