@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                width: 2rem;
+                height: 10rem;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <!-- 1rem=16px -->
+        <div>
+            你时间四佛山南大V年四川吗就是次哦好吃沙发参加方法为撒废话烦死我覅加我加咖啡金额爱分局浓缩机new你经常掉发考虑吧在看剧拍大V殴打V领开始了测试的离开SVN女此所谓冲刺你才能使得曾经搜门口了成本是可怕的SV看门口vlvm;pkd上的VN额机动车走咯SVN看懂
+        </div>
+        <script>
+            let html=document.querySelector("html")
+            //获取html标签的操作权限
+            window.addEventListener("resize",changeRem)
+            //监听当前窗口 尺寸的改变 运行changeRem里面的操作
+            function changeRem(){
+                // 获取html的宽度
+                let width=html.getBoundingClientRect().width
+                //修改html的字体大小为浏览器窗口的十分之一，js的大小写很严格
+                html.style.fontSize=width/10+"px"
+            }
+        </script>
+    </body>
+</html>

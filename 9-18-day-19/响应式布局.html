@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>响应式布局</title>
+        <style>
+            body{
+                background-color: #eee;
+            }
+            div{
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            @media  screen and (max-width:1200px) and (min-width:600px) {
+                /* max-width:600px;当屏幕的最大宽度为600的时候，body和div发生的变化 */
+                body{
+                    /* background-color: yellowgreen; */
+                    background-color: black;
+                }
+                div{
+                    background-color:pink ;
+                }
+            }
+            /* 
+                媒体查询
+                    @media screen 用于电脑手机等，@media all适用于所有设备
+                    and是充当着链接作用
+                    max-width:当屏幕小于多少的宽度
+                    min-width:当屏幕大于多少的宽度
+             */
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <div></div>
+    </body>
+</html>
+<!-- 
+    响应式布局
+        就是在不同设备上的自适应
+ -->
