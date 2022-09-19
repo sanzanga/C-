@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "90513",
+      "name": "15天无理由退货",
+      "font_class": "15tianwuliyoutuihuo",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "145701",
+      "name": "对话信息_填充",
+      "font_class": "duihuaxinxitianchong",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    },
+    {
+      "icon_id": "201525",
+      "name": "礼物 活动",
+      "font_class": "liwuhuodong",
+      "unicode": "f01da",
+      "unicode_decimal": 983514
+    },
+    {
+      "icon_id": "201579",
+      "name": "3.1定位",
+      "font_class": "31dingwei",
+      "unicode": "f0205",
+      "unicode_decimal": 983557
+    },
+    {
+      "icon_id": "838048",
+      "name": "7天无理由退货",
+      "font_class": "7tianwuliyoutuihuo",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "918775",
+      "name": "向右查看",
+      "font_class": "xiangyouchakan",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "1301354",
+      "name": "扳手",
+      "font_class": "banshou",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "5387553",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "eafe",
+      "unicode_decimal": 60158
+    },
+    {
+      "icon_id": "11481178",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    }
+  ]
+}
