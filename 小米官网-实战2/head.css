@@ -1,0 +1,282 @@
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(51, 51, 51);
+}
+.nav-top{
+    font-size: 12px;
+}
+.nav-left{
+    float: left;
+}
+.nav-left ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+.nav-left ul li+li::before{
+    content: "|";
+    padding-left:5px ;
+    color: rgb(66, 66, 66);
+}
+.nav-hidden {
+    width: 126px;
+    /* height: 150px; */
+    /* 让二维码的盒子也消失 */
+    overflow: hidden;
+    height: 0px;
+    border: 1px solid #eee;
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    left: -15px;
+    /* 设置二维码边上的阴影 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    transition: .3s;
+    z-index: 21;
+}
+.nav-hidden img{
+    width: 95px;
+    margin-top: 20px;
+}
+/* 设置下载APP上面的三角形 */
+.download::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    /* 先让三角形消失 */
+    display: none;
+}
+.download:hover .nav-hidden{
+    height: 150px;
+}
+.download:hover::after{
+    display: block;
+}
+.nav-right{
+    float: right;
+}
+.nav-right ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.nav-right ul .reg::before,.nav-right ul .reg::after{
+    content: "|";
+    padding-left: 5px;
+    padding-right:5px ;
+    color: rgb(66, 66, 66);
+}
+.nav-top ul li a:hover{
+    color: white;
+}
+.nav-right ul,.shopping-car{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.shopping-car{
+    position: relative;
+}
+.shopping-car .shopping-top{
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+    margin-left: 20px;
+    position: relative;
+}
+.shopping-hidden{
+    width: 318px;
+    /* height: 100px; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border: 1px solid #eee;
+    position: absolute;
+    left: -180px;
+    overflow: hidden;
+    height: 0;
+    transition: .2s;
+    z-index: 99;
+    line-height: 100px;
+    background-color: white;
+}
+.shopping-hidden p{
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.shopping-car:hover .shopping-hidden{
+    height: 100px;
+}
+.shopping-car:hover a{
+    color: rgb(255, 103, 0);
+}
+/* 设置浮动之后要清除浮动，给添加浮动的父级元素清除浮动 */
+.shopping-car:hover .shopping-top{
+    background-color: white;
+}
+
+.nav-logo{
+    float: left;
+    height: 100px;
+    line-height: 100px
+}
+.nav-logo img{
+    width: 54px;
+}
+.nav-center{
+    float: left;
+    margin-left:140px ;
+    /* height: 100px;
+    line-height: 100px */
+}
+.nav-center li{
+    float: left;
+}
+.navl-top{
+    height: 100px;
+    line-height: 100px;
+}
+.navl-top a{
+    display: block;
+    font-size: 16px;
+    color: black;
+    padding: 0 15px;
+}
+.navl-bottom{
+    min-width: 100%;
+    /* height: 230px; */
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    transition: .2s;
+    z-index: 20;
+    background-color: white;
+}
+.navl-bottom li{
+    position:relative;
+    width: 180px;
+    padding-top: 30px;
+}
+.nlb-info{
+    margin-top: 10px;
+}
+/* 居中设置 */
+.navl-bottom a{
+    text-align: center;
+}
+/* 设置价格的颜色 */
+.info-price{
+    color: rgb(255, 103, 0);
+}
+/* 给图片的中间加上一条线 */
+.navl-bottom li+li::after{
+    content: "";
+    position: absolute;
+    top: 30px;
+    width: 1px;
+    height: 100px;
+    background-color: #ddd;
+}
+.nav-list:hover .navl-bottom{
+    border: 1px solid #ddd;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    height: 230px;
+}
+.nav-center li a:hover{
+    color: rgb(255, 103, 0);
+}
+.nav-search{
+    width: 295px;
+    height: 100px;
+    /* border: 1px solid red; */
+    float: right;
+    position: relative;
+    /* 设置搜索框盒子 */
+    margin-top: 25px;
+}
+/* 搜索框盒子里面的文本框 */
+.nav-search input{
+    width: 245px;
+    height: 50px;
+    border: 1px solid rgb(224,224,224);
+    /* 取消选中文本框的加粗文本框边框的样式 */
+    outline: none;
+    color: rgb(117, 117, 117);
+    /* 设置文本框中文字距离文本框右边的距离  text-indent首行缩进*/
+    text-indent: 10px;
+    float: left;
+}
+/* 搜索框阿里图标盒子的设置 */
+.search-btn{
+    float: left;
+    width: 47px;
+    height: 49px;
+    border: 1px solid rgb(224,224,224);
+    border-left: 0px;
+    text-align: center;
+    line-height: 50px;
+}
+/* 阿里图标的设置 */
+.search-btn .icon-sousuo{
+    font-size: 25px !important;
+    color: rgb(97,97,97);
+}
+/* 搜索选项盒子的设置 */
+.search-hot{
+    width: 245px;
+    height: 240px;
+    border: 1px solid rgb(255, 103, 0);
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: none;
+    z-index: 21;
+    /* 不显示 */
+}
+/* 搜索选项里面的a标签设置 */
+.search-hot a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    color: black;
+}
+/* 当鼠标点击到搜索框的文本框边框的变化 */
+.nav-search input:focus{
+    border-color: rgb(255, 103, 0);
+}
+/* 当鼠标点击到搜索框的文本框和阿里图标盒子的边框设置 */
+.nav-search input:focus+.search-btn{
+    border-color: rgb(255, 103, 0);
+}
+/* 当鼠标移动上搜索框input和搜索按钮的变化 */
+.nav-search:hover input,.nav-search
+:hover .search-btn{
+    border-color: grey;
+}
+/* 当鼠标移动到搜索按钮的时候，阿里图标的背景已经字体的颜色变化 */
+.search-btn:hover{
+    background-color: rgb(255, 103, 0);
+}
+.search-btn:hover .icon-sousuo{
+    color: white;
+}
+/* 当鼠标点击搜索文本框的时候，热门选项出现 */
+/* 关联选择器~（元素后续的元素） */
+.nav-search input:focus~.search-hot{
+    display: block;
+}
+.search-hot a:hover{
+    background-color: rgb(250,250,250);
+}

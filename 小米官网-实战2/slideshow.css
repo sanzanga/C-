@@ -1,0 +1,139 @@
+.slideshow{
+    min-width: 100%;
+    background-color: white;
+    height: 670px;
+}
+.banner{
+    height: 460px;
+    animation: xiaomi 8s infinite alternate;
+    position: relative;
+    top: 88px;
+}
+.banner{
+    position: relative;
+}
+@keyframes xiaomi {
+    0%{
+        background: url(./img/main/slidepic1.webp);
+    }
+    50%{
+        background: url(./img/main/slidepic4.webp);
+    }
+    100%{
+        background: url(./img/main/slidepic3.webp);
+    }
+}
+/* 轮播图上面的按钮 */
+.banner .bbtn{
+    background: url(./img/icon/icon-slides.png);
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    left: 20%;
+    top:45%;
+}
+.banner .bleft{
+    background-position: 80px 0;
+}
+.banner .bright{
+    background-position: 40px 0;
+    left: 96.5%;
+}
+/* 点击左右轮播图出现的效果 */
+.banner .bright:hover{
+    background-position: 125px 0;
+    left: 96.5%;
+}
+.banner .bleft:hover{
+    background-position: 0 0;
+}
+/* 左侧菜单栏 */
+.banner-menu{
+    width: 236px;
+    height: 420px;
+    background-color: rgb(165,163,163);
+    position: absolute;
+    top: 128px;
+    padding: 20px 0;
+}
+/* 菜单栏a标签的设置 */
+.banner-menu a{
+    display: block;
+    line-height: 42px;
+    color: white;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 24px;
+}
+/* 菜单栏里面的>设置 */
+.banner-menu a span{
+    float: right;
+    font-size: 20px;
+}
+/* 鼠标移动到菜单栏里面的选项 */
+.banner-menu .menu-title a:hover{
+    background-color: rgb(255,103,0);
+}
+/* 菜单栏右侧隐藏部分 */
+.menu-hidden{
+    width: 955px;
+    height: 442px;
+    position: absolute;
+    left: 236px;
+    top: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    padding: 9px 20px;
+    display: none;
+    z-index: 20;
+}
+/* 隐藏部分里面的a标签设置 */
+.menu-hidden ul a{
+    color: black;
+    font-size: 14px;
+    display: block;
+    height: 80px;
+}
+/* 隐藏部分里面的图片盒子可以并排显示 */
+.menu-hidden ul a div{
+    display: inline-block;
+}
+/* 隐藏部分里面的p标签可以并排显示 */
+.menu-hidden ul a p{
+    display: inline-block;
+}
+/* 让ul进行读懂 */
+.menu-hidden ul{
+    margin-right: 20px;
+    float: left;
+}
+.menu-hidden ul li a p:hover{
+    color: rgb(255,103,0);
+}
+.menu-list:hover .menu-hidden{
+    display: block;
+}
+
+.middle .circle{
+    height: 12px;
+    width: 100px;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 360px;
+    left: 75%;
+    z-index: 19;
+}
+.middle .circle span{
+    width: 6px;
+    height: 6px;
+    float: left;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid white;
+    margin-left: 5px;
+}
+.middle .circle .none{
+    background-color: white;
+    border-color: black;
+}
