@@ -1,0 +1,3 @@
+﻿  test.c
+D:\C语言\9-25_C\9-25_C\test.c(196,36): warning C4020: “intersectionlist”: 实参太多
+  9-25_C.vcxproj -> D:\C语言\9-25_C\Debug\9-25_C.exe
