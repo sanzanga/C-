@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //规律:字符串类型加上正+或者-都会自动换换成数值类型，如果字符串中有非数值，就返回NaN
+            var str="18";
+            console.log(+str);//18
+            console.log(typeof(+str));//number
+            console.log(-str);//-18
+            console.log(typeof(-str));//number
+
+            var str1="18abc";
+            console.log(+str);//NaN
+            console.log(-str);//NaN
+
+            
+            console.log(str-0);//18
+            console.log(str1-0);//NaN
+            console.log(str1+0);//进行了拼接  18abc0
+        </script>
+    </body>
+</html>

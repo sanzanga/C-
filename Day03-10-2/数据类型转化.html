@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //parseInt() 转换为整数   ---   只转换整数
+            console.log(parseInt("10"));//10
+            console.log(parseInt("10cnsjfkd"));//10
+            console.log(parseInt("d10sfjisdfj"));//NaN
+            console.log(parseInt("1cnsdiuvcnd"));//1
+            console.log(parseInt("cnsduivn"));//NaN
+            console.log(parseInt("10.98"));//10
+            console.log(parseInt("10.98chvdsiucf"));//10
+            //总结：从左往右依次进行转换，如果遇到字母立马停止转换，把之前转换好的返回
+
+            //parseFloat() 转换为浮点型   ----   转换为小数---浮点数
+            console.log(parseFloat("10"));//10
+            console.log(parseFloat("10cnsjfkd"));//10
+            console.log(parseFloat("d10sfjisdfj"));//NaN
+            console.log(parseFloat("1cnsdiuvcnd"));//1
+            console.log(parseFloat("cnsduivn"));//NaN
+            console.log(parseFloat("10.98"));//10.98
+            console.log(parseFloat("10.98chvdsiucf"));//10.98
+            //总结：从左往右依次进行转换，如果遇到字母立马停止转换，把之前转换好的返回
+
+            //Number()
+            console.log(Number("10"));//10
+            console.log(Number("10cnsjfkd"));//NaN
+            console.log(Number("d10sfjisdfj"));//NaN
+            console.log(Number("1cnsdiuvcnd"));//NaN
+            console.log(Number("cnsduivn"));//NaN
+            console.log(Number("10.98"));//10.98
+            console.log(Number("10.98chvdsiucf"));//NaN
+            //总结：Number（）也是转换为数字，只要遇到数字就返回NaN
+        </script>
+    </body>
+</html>

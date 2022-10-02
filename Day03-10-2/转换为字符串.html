@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //其他类型转换为字符串类型 两种方式
+            //第一种：toString()  ---  这是一个方法，所以用.的方式使用
+            //不可以对null类型和undefined进行转换
+            var num=10;
+            console.log(num);//10  number
+            console.log(num.toString());//10   string
+            console.log(typeof(num).toString());//string
+
+            //null和undefined
+            // var nul=null;
+            // console.log(nul.toString(nul));//error
+            // var age;
+            // console.log(typeof(age));
+            // console.log(age.toString());//error
+            //null和undefined不能使用toString()
+            //解决办法：强制类型转换String()
+
+            //第二种办法：String()
+            var number=10;
+            console.log(number);
+            console.log(typeof(number));//number
+            console.log(String(number));
+            console.log(typeof(String(number)));//string
+
+            var nll=null;
+            console.log(nll);
+            console.log(typeof(String(nll)));//string
+
+            var undef;
+            console.log(typeof(undef));//undefined
+            console.log(typeof(String(undef)));//string
+
+
+            //toString()不能转换undefined和null，但是String()可以
+        </script>
+    </body>
+</html>

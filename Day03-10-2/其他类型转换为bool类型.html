@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //转换为bool类型：Boolean()  结果只有两种，要么为true，要么为false
+            var str="张三";
+            var num=18;
+            var nul=null;
+            var undef;
+            console.log(Boolean(str));//true
+            console.log(Boolean(num));//true
+            console.log(Boolean(nul));//false
+            console.log(Boolean(undef));//false
+            console.log(Boolean(1));//true
+            console.log(Boolean(0));//false
+            console.log(Boolean(-1));//true
+
+            //转换结果为false的五种情况：
+            //0 、 undefined 、 null 、 "" 、 NaN
+            //其他情况都是true
+            console.log(Bolean(false));//false
+        </script>
+    </body>
+</html>
