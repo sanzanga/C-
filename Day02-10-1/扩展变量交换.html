@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //变量交换 将num1与num2的值进行交换
+            var num1=10;
+            var num2=20;
+            colsole.log(num1,num2);//10 20
+
+            // 第一个方法：使用第三方变量进行交换
+            var temp=num1;
+            num1=num2;
+            num2=temp;
+            colsole.log(num1,num2);//20 10
+
+            //第二个方法：不声明第三方变量进行交换
+            num1=num1+num2;//30 10
+            num2-num1-num2;//30 20
+            num1=num1-num2;//10 20
+        </script>
+    </body>
+</html>

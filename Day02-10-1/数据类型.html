@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //js数据类型
+            //number、string、boolean、null、undefined
+
+            //number
+            var num1=10;
+            console.log(tyepof(num1));
+            var num2=1.1;
+            cosnsole.log(tyepof(num2));
+
+            //string
+            var str='zhangsan';
+            cosnsole/log(typeof(str));
+
+            //boolean
+            var flg=true;
+            console.lod(typeof(flg));
+
+            //null
+            var nul=null;
+            console.log(typeof(nul));//但是返回的是object
+            //解决办法  原型链
+            console.log(Object.prototype.toString.call(nul));
+
+            //undefined
+            var age;
+            console.log(typeof(age));
+
+            //用typeof(变量名)来获取变量的类型
+            //typeof使用语法
+            //1、typeof 变量名 -----  推荐使用
+            //2、typeod(变量)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //面试题1
+            var num;
+            console.log(typeof(num));//undefined
+            console.log(num+10);//NaN---not a number  不是一个数字
+            //如果一个undefined和一个数字进行计算，结果是NaN
+
+            //面试题2：不要那小数验证小数
+            var x=0.1;
+            var y=0.2;
+            var sum=x+y;//并不是所有的小数都会有这个问题，记住这个特殊情况就可以
+            console.log(sum);
+            //console.log(1.1+1.2);
+            console.log(sum==0.3);//fasle;
+            //双等于表示判断 ===表示全等
+
+            //面试题3：不要用NaN验证是否等于NaN
+            var age;
+            console.log(age+10==NaN);//false 不是一个数字和不是一个数字比较是不相等的，尽管都不是一个数字，但是也无法判断其是否相等
+            console.log("nihao"=="wohao");//nihao!=wohao
+
+            //如何验证NaN 通过 isNaN --- 是不是，不是一个数字
+            var number;
+            console.log(isNaN(number));//true
+            console.log(isNaN(10));//false
+            
+        </script>
+    </body>
+</html>
