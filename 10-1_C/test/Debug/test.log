@@ -1,0 +1,3 @@
+﻿  test.cpp
+D:\C语言\10-1_C\10-1_C\test.cpp(370,32): warning C4018: “>”: 有符号/无符号不匹配
+  test.vcxproj -> D:\C语言\10-1_C\Debug\test.exe
