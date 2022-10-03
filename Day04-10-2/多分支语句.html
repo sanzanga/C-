@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                多分支语句：if  else if(条件1)  else if(条件2) ...  else
+                语法格式：
+                if(表达式1){
+                    代码1;
+                }else if(表达式2){
+                    代码2;
+                }else if(表达式3){
+                    代码3;
+                }...
+                else{
+                    代码;
+                }
+                //执行原理：首先判断表达式1是否成立，如果表达式1成立，则执行代码1，后面的代码不执行；如果表达式1不成立，则判断表达式2是否成立，若表达式2成立看，则就执行代码2，后面的代码就不再执行；若表达式2不成立，则依次往下判断；若上面的所有表达式都不成立，则执行else里面的代码
+            */
+           var score=parseInt(prompt("请输入您的成绩"));
+           if(score > 90 && score <= 100){
+                console.log("A");
+           }else if(score > 80){
+            console.log("B");
+           }
+           else if(score < 70){
+            console.log("C");
+           }else if(score < 60){
+            console.log("D");
+           }
+           else{
+            console.log("E");
+           }
+        </script>
+    </body>
+</html>

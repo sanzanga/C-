@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            var score=parseInt(prompt("请输入您的成绩"));
+            if(isNaN(score)){
+                console.log("输入有误，请重新输入");
+            }else{
+                if(score > 90 && score <= 100){
+                console.log("A");
+                }else if(score > 80){
+                console.log("B");
+                }
+                else if(score < 70){
+                console.log("C");
+                }else if(score < 60){
+                console.log("D");
+                }
+                else{
+                console.log("E");
+                }
+            }
+        </script>
+    </body>
+</html>

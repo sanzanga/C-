@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                双分支语句：if  -  else  两个分支  如果  那么
+                语法格式
+                if(条件){
+                    代码1;
+                }
+                else{
+                    代码2；
+                }
+                执行原理：首先判断条件是否成立，则执行代码1，否则执行代码2
+            */
+
+            // var age=20;
+            // if(age>=18){
+            //     console.log("条件成立");
+            // }
+            // else{
+            //     console.log("条件不成立");
+            // }
+
+            //为了提高用户体验，让用户自己输入数据
+            var age=prompt("请输入您的年龄：");
+            console.log(typeof age);//string
+            //prompt输出的是一个字符串，记得转化成数值型
+            //parsempt(prompt("请输入您的年龄：")),将age转换为number类型
+            if(age >= 18){
+                console.log("条件成立");
+            }else{
+                console.log("条件不成立");
+            }
+        </script>
+    </body>
+</html>

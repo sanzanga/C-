@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                优先级的按照从高到低的顺序
+                1、()优先级最高
+                2、一元运算符 ++ -- ！
+                3、算术运算符 先* /后+ -
+                4、关系运算符（比较运算符）> >= < <=
+                5、相等运算符 == != === !==
+                6、逻辑运算符 先与后或
+                7、赋值运算符 = += -= *= /= %=
+            */
+            var result=(4 >= 6 || '人' != '阿凡达' && !(12*2 == 144)  &&true );
+            //(false||true&&true&&true)  true
+            console.log(result);
+
+            var num =10;
+            var result2=(5==num/2 && (2+2*num).toString() === '22');
+            //true&&true
+            console.log(result2);//true
+
+        </script>
+    </body>
+</html>

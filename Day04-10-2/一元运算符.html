@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //一元运算符  前置++  后置++  前置--  后置-- 
+            //前置++  后置++（++在前面叫做前置++，++在后面叫做后置++）
+            //前置--  后置--（--在前面叫做前置--，--在后面叫做后置--）
+
+            //++前置
+            // var num=10;
+            // ++num;//++前置 等价于 num=num+1
+            // console.log(num);
+
+            //++后置
+            // var num=10;
+            // num++;//++前置 等价于 num=num+1
+            // console.log(num);
+
+            //++后置
+            // var num=10;
+            // var sum=num++ + 10;
+            // console.log(sum);//20
+            // console.log(num);//11
+            //总结：++后置，先运算，后自加
+
+            // //++前置
+            // var num=10;
+            // var sum=++num + 10;
+            // console.log(sum);//21
+            // console.log(num);//11
+            // //总结：++前置，先自加，后运算
+
+            // //--后置
+            // var num=10;
+            // var sum=num-- + 10;
+            // console.log(sum);//20
+            // console.log(num);//9
+            // //总结：--后置，先运算，后自加
+
+            //--前置
+            var num=10;
+            var sum=--num + 10;
+            console.log(sum);//19
+            console.log(num);//9
+            //总结：--前置，先自加，后运算
+        </script>
+    </body>
+</html>
