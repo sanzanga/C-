@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                多分支语句：switch-case
+                语法格式：
+                switch(表达式){
+                    case "值1":
+                        代码1;
+                    break;
+                    case "值2":
+                        代码2;
+                    break;
+                    case "值3":
+                        代码3;
+                    break; 
+                    ...
+                    defualt:
+                        代码n;
+                    break;
+                }
+                执行原理：首先判断表达式的值，如果表达式的值和值1相同，则执行代码1；代码继续往下执行，当遇到break，后面的的代码才不会执行；
+                如果表达式的值与值1不相同，则继续和值2进行比较，如果表达式的值与值2相同，则执行代码2，代码继续往下执行，当遇到break，后面的代码不再执行
+                ......
+                如果表达式的值和上面的都不相同，则执行defualt里面的代码。
+            */
+
+            //需求：用switch-case实现 获取一个人的成绩的级别
+            //如果是A级则显示90到100分之间
+            //如果是B级则显示80到90分之间
+            //如果是C级则显示70到80分之间
+            //如果是D级则显示60到70分之间
+            //如果是E级则显示0到59之间
+
+            // var jiBie="A";
+            // switch(jiBie){
+            //     case "A":
+            //         console.log("90到100之间");
+            //         break;
+            //     case "B":
+            //         console.log("80到90之间");
+            //         break;
+            //     case "C":
+            //         console.log("70到80之间");
+            //         break;
+            //     case "D":
+            //         console.log("60到70之间");
+            //         break;    
+            //     case "E":
+            //         console.log("0到59之间");
+            //         break;
+            // }
+
+
+            //根据输入的数字显示星期几
+            // var day=parseInt(prompt("请输入一个数字"));
+            // switch(day){
+            //     case 1:console.log("星期1");break;
+            //     case 2:console.log("星期2");break;
+            //     case 3:console.log("星期3");break;
+            //     case 4:console.log("星期4");break;
+            //     case 5:console.log("星期5");break;
+            //     case 6:console.log("星期6");break;
+            //     case 7:console.log("星期7");break;
+            //     default:console.log("您的输入有误，请重新输入");break;
+            // }
+
+
+            //defualt可以省略
+            var num="10";
+            switch(num){
+                case 10 : console.log("数字10"); break;
+                case "10":console.log("字符串的10"); break;
+            }
+            //考点表达式里面的判断是全等的判断
+        </script>
+    </body>
+</html>

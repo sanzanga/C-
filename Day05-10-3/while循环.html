@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                语法：
+                while(循环条件){
+                    循环体
+                    结束条件；
+                }
+                执行原理：首先判断循环条件是否成立，如果不成立，则就不进入循环，如果循环条件成立，进入循环执行循环体；接下来再次判断循环条件...只要循环条件成立，就一直进行循环；不成立，就跳出循环
+            */
+           //输出0-100之间的数字
+        //    var i=0;//初始化
+        //    while(i<=100){
+        //         console.log(i);
+        //         i++;//一定记得加结束条件
+        //    }
+
+
+            //需求：输出十次张三
+            // var i=0;
+            // while(i<20){
+            //     console.log("张三"+(i+1));
+            //     i++;
+            // }
+
+            //需求：计算1~100之间所有数字的和
+            // var i=1;
+            // var sum=0;
+            // while(i<=100){
+            //     sum+=i;
+            //     i++;
+            // }
+            // console.log(sum);
+
+            //需求：求1~100的偶数和
+            var sum=0;
+            var i=1;
+            while(i<=100){
+                if(i%2==0){
+                    sum+=i;
+                }
+                i++;
+            }
+            console.log(sum);
+
+        </script>
+    </body>
+</html>

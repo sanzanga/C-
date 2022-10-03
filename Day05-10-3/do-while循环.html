@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                do-while循环语法：
+                do{
+                    循环体;
+                }while(循环条件);
+            */
+           //需求：用do-while实现1~100之间求和
+        //    var sum=0;
+        //    var i=1;
+        //    do{
+        //     sum+=i;
+        //     i++;
+        //    }while(i<=100);
+        //    console.log(sum);
+
+
+        //需求：用do-while求一百以内三的倍数和
+        // var sum=0;
+        // var i=1;
+        // do{
+        //     if(i%3==0){
+        //         sum+=i;
+        //     }
+        //     i++;
+        // }while(i<=100);
+        // console.log(sum);
+
+        //需求：问用户：您觉得我帅吗？提示用户请输入y/n,如果n就是一直问，我帅不帅，如果用户输入y，则结束，并提示用户，您真有眼光
+        do{
+            var result=prompt("您觉得我帅吗？");
+        }while(result=="n");
+        console.log('您真有眼光');
+        </script>
+    </body>
+</html>
