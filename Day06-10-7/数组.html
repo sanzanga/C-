@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //数组：存储数据   ----   []--数组
+            //定义一个数组
+            var arr=[10,20,30,40,50];
+            console.log(arr);
+            console.log("================");
+            
+            //定义一个空数组
+            var arr=[];
+            console.log(arr.length);//0
+            console.log("================");
+
+            //数组里面有几个数据，数组的长度就为多少
+            //数组的数据叫做元素
+            //数组的下标叫做索引：从0开始的，通过数组的下标，可以获取数组里面任意的数据
+            var arr=[10,20,30,40,50];
+            console.log(arr.length);
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[arr.length-1]);
+            console.log("================");
+
+            //数组里面可以存储任意数据类型
+            var arr=[10,"str",null,undefined,true];
+            console.log(arr);
+            console.log(arr.length);
+            console.log("================");
+
+            //数组里面的元素可以通过下标修改，也可以修改数字的长度
+            var arr2=[5,6];
+            console.log(arr2);
+            console.log(arr2.length);
+
+            arr2[0]=10;
+            console.log(arr2);
+            console.log(arr2.length);
+            arr2[1]=20;
+            console.log(arr2);
+            console.log(arr2.length);
+
+            arr2[2]=30;
+            console.log(arr2);
+            console.log(arr2.length);
+            console.log("================");
+
+            //通过循环打印数组
+            for(var i=0;i<arr2.length;i++){
+                console.log(arr2[i]);
+            }
+
+            console.log("================");
+
+            //求数组中所有元素的和
+            var sum=0;
+            for(var i=0;i<arr2.length;i++){
+                sum+=arr2[i];
+            }
+            console.log(sum);
+            console.log("================");
+            //平均值
+            console.log(sum/arr2.length);
+        </script>
+    </body>
+</html>

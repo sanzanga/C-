@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //break：当程序遇到break，直接跳出当前整个循环，此时这个循环结束，执行下面的代码
+            while(true){
+                console.log("111");
+                break;//不加程序就会进入死循环，终止循环
+            }
+
+            //需求：找到100~200之间第一个被7整除的数字
+            for(var i=100;i<=200;i++){
+                if(i%7==0){
+                    console.log(i);
+                    break;
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //continue关键字：当程序遇到continue之后，跳出当前本次循环，直接执行下一次循环
+            var i=0;
+            while(i<5){
+                console.log(i);
+                //continue;//加上之后就陷入死循环
+                i++;
+            }
+
+            //需求：求100~200之间所有奇数的和
+            var sum=0;
+            for(var i=100;i<=200;i++){
+                if(i%2==0){
+                    continue;
+                }
+                sum+=i;
+            }
+            console.log("100~200之间所有奇数的和为"+sum);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            // 用for求1~100之间的和
+            var sum = 0;
+            for(var i = 1; i <= 100; i++){
+                sum += i;
+            }
+            console.log("1~100之间的和是"+sum);
+
+            // 用for求1~100之间所有偶数的和
+            var sum=0;
+            for(var i=1;i<=100;i++){
+                if(i%2==0){
+                    sum+=i;
+                }
+            }
+            console.log("1~100之间所有偶数的和"+sum);
+
+            //用for求1~100之间所有奇数的和
+            var sum=0;
+            for(var i=1;i<=100;i++){
+                if(i%2!=0){
+                    sum+=i;
+                }
+            }
+            console.log("1~100之间所有奇数的和"+sum);
+
+            //用for求1~100之间的平均值
+            var sum = 0;
+            for(var i = 1; i <= 100; i++){
+                sum += i;
+            }
+            console.log("1~100之间的平均值是"+sum/100);
+        </script>
+    </body>
+</html>
