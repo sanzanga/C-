@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //1、实参和形参个数不一致问题
+            //第一种情况：实参的个数大于形参
+            function getSum(x,y){
+                return x+y;
+            }
+            var res = getSum(100,20,30,40,50);
+            console.log(res);
+            //如果实参个数大于形参的个数，那么多余的实参会被丢弃
+
+            //第二种情况：实参的个数小于形参
+            function getSum(x,y,z){//z没有被赋值 z为undefined
+                return x+y+z;//NaN：undefined+数字=NaN
+            }
+            var res=getSum(10,20);
+            console.log(res);
+
+
+             /*
+                undefined归类：
+                    1、变量声明了没有进行赋值结果是undefined，例如：var age;
+                    2、函数没有返回值，在世在调用的时候接收了，那么函数默认返回值就是undefined
+                    3、函数有返回值return，但是return后面并没有相应的内容，结果就是undefined
+            */
+            //2
+            function func2(x,y){
+                var sum=x+y;
+            }
+            var res2=func2();
+            console.log(res2);
+            //3
+            function func3(x,y){
+                var sum=x+y;
+                return;
+            }
+            var res3=func3(10,40);
+            console.log(res3);
+
+           //return后面的代码是不会被执行的
+           function getSum(x,y){
+                return x+y;
+                console.log("1111111111111");
+           }
+           var res=getSum(10,40);
+           console.log(res);
+        </script>
+    </body>
+</html>

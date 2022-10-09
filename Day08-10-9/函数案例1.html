@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //设计一个函数优先考虑就是参数和返回值
+            //求1~n之间的数字和
+            function getSum(n){
+                var sum=0;
+                for(var i=1;i<=n;i++){
+                    sum+=i;
+                }
+                return sum;
+            }
+            var res=getSum(100);
+            console.log(res);
+            console.log("=================");
+
+            //求n~m之间左右的数字之和
+            function getSum1(n,m){
+                var sum=0;
+                for(var i = n; i <= m; i++){
+                    sum += i;
+                }
+                return sum;
+            }
+            var res1 = getSum1(2, 4);
+            console.log(res1);
+
+            // 扩展求圆的面积
+            function getStr(r){
+                return Math.PI * r * r;
+            }
+            var res2 = getStr(5);
+            console.log(res2);
+
+            console.log("=====================");
+
+            //求6的数字阶乘
+            // var sum = 1;
+            // for(var i = 1; i<= 6; i++){
+            //     sum *= i;
+            // }
+            // console.log(sum);
+
+            function jieCheng(n){
+                var sum = 1;
+                for(var i = 1; i<= n; i++){
+                    sum *= i;
+                }
+                return sum;
+            }
+            var res3 = jieCheng(6);
+            console.log(res3);
+            console.log("=====================");
+
+            //函数的数组反转
+            function reverseArr(arr){
+                for(var i = 0; i< arr.length/2; i++){
+                    var temp = arr[i];
+                    arr[i] = arr[arr.length - 1 -i];
+                    arr[arr.length - 1 -i] = temp;
+                }
+                return arr;
+            }
+            var arr = [10, 20, 30, 40, 50];
+            console.log(arr);
+            console.log("反转后");
+            reverseArr(arr);
+            console.log(arr);
+            console.log("=====================");
+
+            //函数版冒泡排序x
+            function bubbleSort(arr){
+                for(var i = 0;i < arr.length - 1; i++){
+                    for(var j = 0;j < arr.length - 1 - i; j++){
+                        if(arr[j] > arr[j+1]){
+                            var temp = arr[j];
+                            arr[j] = arr[j+1];
+                            arr[j+1] = temp;
+                        }
+                    }
+                }
+                return arr;
+            }
+            bubbleSort(arr);
+            console.log("排序后");
+            console.log(arr);
+        </script>
+    </body>
+</html>

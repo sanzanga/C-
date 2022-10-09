@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            function consoleSum(x,y){//形参不能写类型---形参
+                var sum=x+y;
+                return sum;
+            }
+            var num1=10;
+            var num2=20;
+            var sum=consoleSum(num1,num2);//实参---在调用的时候
+            console.log(sum);
+
+            function consoleSum(x,y){//形参不能写类型---形参
+                return x+y;
+            }
+            var num1=10;
+            var num2=20;
+            var sum=consoleSum(num1,num2);//实参---在调用的时候
+            console.log(sum);
+        </script>
+    </body>
+</html>
