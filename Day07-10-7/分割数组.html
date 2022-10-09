@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //需求：把数组中的每个元素用 | 拼接在一起产生一个新的字符串并输出
+             var names=['唐僧','孙悟空','猪八戒','沙僧'];
+            var str="";//用来接收拼接之后的字符串
+            //循环遍历
+            for(var i=0;i<names.length;i++){
+                //console.log(names[i]);
+                if(i==names.length-1){
+                    str+=names[i];
+                }
+                else{
+                    str+=names[i]+"|";
+                }
+            }
+            console.log(str);
+
+            console.log("===================");
+            var str="";
+            for(var i=1;i<names.length;i++){
+                //console.log(names[i]);
+                str+="|"+names[i];
+            }
+            console.log(names[0]+str);
+        </script>
+    </body>
+</html>

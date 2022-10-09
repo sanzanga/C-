@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //去掉数组中重复的0，把其他的数据存放到一个新的数组中
+            var arr=[10,0,20,0,30,50,60,70,80,0];
+            //定义一个新的数组
+            var newArr=[];
+            for(var i=0;i<arr.length;i++){
+                if(arr[i]!=0){
+                    newArr[newArr.length]=arr[i];
+                }
+            }
+            console.log(newArr);
+        </script>
+    </body>
+</html>
