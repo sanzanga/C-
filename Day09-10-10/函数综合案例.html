@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <script src="./public.js"></script>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //封装一个函数，用户传入年月日，判断这一天是第几天
+            // function getDay(year,month,day){
+            //     if(month == 1){
+            //         return day;
+            //     }
+            //     else{
+            //         var days = 0;
+            //         days += day;
+            //         for(var i = 1;i < month; i++){
+            //             if(i == 1 || i == 3 || i == 5 || i == 7 || i == 10 || i == 12 || i == 8){
+            //                 days += 31;
+            //             }
+            //             if(i == 4 || i == 6 || i == 9 || i == 11){
+            //                 days += 30;
+            //             }
+            //         }
+            //         if(isLeapYear(year)){
+            //             days += 29;
+            //         }
+            //         else{
+            //             days += 28;
+            //         }
+            //     }
+            //     return days;
+            // }
+            // var result = getDay(2022,3,22);
+            // console.log(result);
+
+            function getDay(year,month,day){
+                var days = day;
+                if(month == 1){
+                    return days;
+                }
+                var months=[31,28,31,30,31,30,31,31,30,31,30,31];
+                for(var i = 0; i < month - 1; i++){
+                    days += months[i];
+                }
+                if(isLeapYear(year) && month > 2){
+                    days += 1;
+                }
+                return days;
+            }
+            var result = getDay(2022,10,10);
+            console.log(result);
+        </script>
+    </body>
+</html>

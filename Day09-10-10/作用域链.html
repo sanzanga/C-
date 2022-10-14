@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //作用域链：由内向外一层一层查找，这种机制叫做作用域链
+            var num = 10;
+            function fun1(){
+                var num = 20;
+                function fun2(){
+                    var num = 30;
+                    function fun3(){
+                        var num = 50;
+                        console.log(num);
+                    }
+                    fun3();
+                }
+                fun2();
+            }
+            fun1();
+        </script>
+    </body>
+</html>

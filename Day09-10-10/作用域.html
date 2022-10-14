@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            /*
+                作用域：
+                    1、全局作用域：网页一打开就形成了全局作用域-----函数外部就叫做全局作用域
+                        全局变量：在全局作用域下定义的变量就是全局变量
+                    2、局部作用域（私有作用域）：函数一执行就形成了局部作用域
+                        局部变量：在局部作用域里面定义的变量就是局部变量
+            */
+
+            var num = 10;//全局变量
+
+            function func(){
+                var num = 20;//局部变量
+                return num;
+            }
+            var res = func();
+            console.log(res);//20
+            console.log(num);//10
+        </script>
+    </body>
+</html>

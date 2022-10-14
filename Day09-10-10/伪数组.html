@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //伪数组：arguments（因为有些数组的方法是不能使用的）
+
+            //求n个数字的和
+            //arguments可以获取到用户传递的数量（工作的时候：并不知道用户到底会传递几个参数，或者说用户想传递几个就传递几个）
+            //arguments---可以随时拿到用户传递的参数----并且不用写参数
+            function fun(){
+                console.log(arguments);
+                console.log(arguments.length);
+            }
+            fun(10, 20, 30, 40, 50, 60);
+
+            //使用arguments求任意数字的和
+            function getAdd(){
+                var sum=0;
+                for(var i=0;i<arguments.length;i++){
+                    sum+=arguments[i];
+                }
+                return sum;
+            }
+            var result=getAdd(10,20,30,40,50,60);
+            console.log(result);
+        </script>
+    </body>
+</html>

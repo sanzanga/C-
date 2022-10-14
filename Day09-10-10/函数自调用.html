@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //函数自调用：函数自己调用自己
+            // function func(){
+            //     console.log("我是函数");
+            // }
+            // func();//手动调用
+
+            //这种没有起名字的函数----匿名函数-----特别是DOM和BOM里面大量使用
+            (function(){
+                console.log("我是自调用函数");
+            })();
+        </script>
+    </body>
+</html>
