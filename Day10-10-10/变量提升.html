@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //变量提升又称域解析：当网页一打开，浏览器就会读一遍代码，浏览器会把带var的function提前声明
+
+            //题目1
+            console.log(a);//undefined
+            var a = 123;
+            console.log(a);//123
+            console.log(f);//函数体
+            f();//函数声明提升
+            function f(){
+                console.log("函数声明提升");
+            }
+            //伪代码---浏览器代码执行
+            function f(){
+                console.log("函数声明提升");
+            }
+            var a;
+            console.log(a);//undefined
+            a = 123;
+            console.log(a);//123
+            console.log(f);//函数体
+            f();//函数声明提升
+
+        </script>
+    </body>
+</html>

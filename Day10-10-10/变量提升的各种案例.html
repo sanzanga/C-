@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            // //当函数名都是一样的，同名函数后面的会覆盖前面的
+            // f();//3
+
+            // function f(){
+            //     console.log("1");
+            // }
+            // f();//3
+
+            // function f(){
+            //     console.log("2");
+            // }
+            // f();//3
+
+            // function f(){
+            //     console.log("3");
+            // }
+
+            // //伪代码
+            // function f(){
+            //     console.log("3");
+            // }
+            // f();//3
+
+            // f();//3
+
+            // f();//3
+
+
+            // //第二题：
+            // console.log(a);//undefined
+            // var a = 123;
+            // console.log(a);//123
+            // function f1(){
+            //     console.log(a);//undefined
+            //     var a = 456;
+            //     console.log(a);//456
+            // }
+            // f1();
+            // console.log(a);//123
+
+            // //伪代码
+            // var a;
+            // console.log(a);//undefined
+            // a = 123;
+            // console.log(a);//123
+            // function f1(){
+            //     var a;
+            //     console.log(a);//undefined
+            //     a = 456;
+            //     console.log(a);//456
+            // }
+            // f1();
+            // console.log(a);//123
+
+            // //第三题：变量和变量同名，解析后只剩一个当前变量的声明
+            // console.log(a);//undfined
+            // var a = 123;
+            // console.log(a);//123
+            // var a = 456;
+            // console.log(a);//456
+
+            // //伪代码
+            // var a;
+            // console.log(a);//undfined
+            // a = 123;
+            // console.log(a);//123
+            // a = 456;
+            // console.log(a);//456
+
+            // //第四题：变量和函数同名，函数声明提升，忽略变量声明提升
+            // console.log(a);//a函数体
+            // var a = 123;
+            // console.log(a);//123
+
+            // function a(){}
+            // console.log(a);//123
+
+            // function a(){}
+            // console.log(a);//123
+
+            // //伪代码
+            // function a(){}
+            // console.log(a);//a函数体
+            // a = 123;
+            // console.log(a);//123
+
+            // console.log(a);//123
+
+            // console.log(a);//123
+
+            // //第五题：
+            // console.log(a);//undefined
+            // var a = 12;
+
+            // function fn(){
+            //     console.log(a);//undefined
+            //     var a = 13; 
+            // }
+            // fn();
+            // console.log(a);//12
+
+            // //伪代码
+            // var a;
+            // console.log(a);//undefined
+            // a = 12;
+
+            // function fn(){
+            //     var a;
+            //     console.log(a);//undefined
+            //     a = 13; 
+            // }
+            // fn();
+            // console.log(a);//12
+
+            // //第六题：作用域链
+            // console.log(a);//undefined
+            // var a = 12;
+
+            // function fn(){
+            //     console.log(a);//12
+            //     a=13;
+            // }
+            // fun();
+            // console.log(a);//13
+
+            // //伪代码
+            // var a;
+            // console.log(a);//undefined
+            // a = 12;
+
+            // function fn(){
+            //     console.log(a);//12
+            //     a=13;
+            // }
+            // fun();
+            // console.log(a);//13
+
+            // //第七题
+            // var foo = 1;
+
+            // function bar() {
+            //     //不管条件成不成立都要进行变量提升
+            //     if(!foo) {
+            //         var foo = 10;
+            //     }
+            //     console.log(foo);
+            // }
+            // bar();//10
+
+            // //伪代码
+            // var foo;
+            // foo = 1;
+
+            // function bar() {
+            //     var foo;
+            //     //不管条件成不成立都要进行变量提升
+            //     if(!foo) {//!undefined为真
+            //         foo = 10;
+            //     }
+            //     console.log(foo);
+            // }
+            // bar();//10
+
+            // //第八题：
+            // var n = 13;
+
+            // function fn(n) {
+            //     alert(n);//13
+            //     var n = 14;
+            //     alert(n);//14
+            // }
+            // fn(n);
+            // console.log(n);//13
+
+            // //伪代码
+            // var n;
+            // n = 13;
+
+            // function fn(n) {
+            //     alert(n);//13
+            //     n = 14;
+            //     alert(n);//14
+            // }
+            // fn(n);
+            // console.log(n);//13
+
+            // //大厂面试题
+            // console.log(a,b,c);//undefined undefined undefined
+            // var a = 10,b = 20,c = 30;
+            // function f(a) {
+            //     //a有形参、连等就var第一个b、c没有就往外面找
+            //     console.log(a,b,c);//10 undefined 30
+            //     var b=a=c=100;
+            //     console.log(a,b,c);//100 100 100
+            // }
+            // f(10,20);
+            // console.log(a,b,c);//10 20 100
+
+            // //伪代码
+            // //大厂面试题
+            // var a;var b;var c;
+            // console.log(a,b,c);//undefined undefined undefined
+            // a = 10,b = 20,c = 30;
+            // function f(a) {
+            //     var b;
+            //     //a有形参、连等就var第一个b、c没有就往外面找
+            //     console.log(a,b,c);//10 undefined 30
+            //     b=a=c=100;
+            //     console.log(a,b,c);//100 100 100
+            // }
+            // f(10,20);
+            // //a不变、全局b不变、全局c发生了改变
+            // console.log(a,b,c);//10 20 100
+
+            //淘宝面试题
+            console.log(num,str);//undefined undefined
+            var num = 18;
+            var str = "lily";
+
+            function fn2() {
+                console.log(str, num);//lily undefined
+                num = 19;
+                str = "candy";
+                var num = 14;
+                console.log(str, num);//candy 14
+            }
+            fn2();
+            console.log(str ,num);//candy 18
+
+            //伪代码
+            var num;
+            var str;
+            console.log(num,str);//undefined undefined
+            num = 18;
+            str = "lily";
+
+            function fn2() {
+                var num;
+                console.log(str, num);//lily undefined
+                num = 19;
+                str = "candy";
+                num = 14;
+                console.log(str, num);//candy 14
+            }
+            fn2();
+            console.log(str ,num);//candy 18
+        </script>
+    </body>
+</html>

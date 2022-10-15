@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //js的内置对象：内置对象（系统自带的）后面我们还会学习到浏览器对象DOM，自定义构造函数对象（new一下就有了对象了这个是面向对象里面详细讲解）
+            //内置对象:Math、Date、Array、String.....
+            //Math.PI圆周率
+            //Math.max()最大值
+            //Math.min()最小值
+            //Math.abs()绝对值
+            console.log(Math.abs(null));//0
+            console.log(Math.abs("string"));//NaN
+            console.log(Math.abs());//NaN
+
+            //随机数random
+            //Math.random()获取0~1之间的随机数，浮点数（小数）包含0包含1可以用[0,1)
+            console.log(Math.random());
+            //获取0~5之间的随机整数，包含0不包含5
+            console.log(parseInt(Math.random()*5));
+            //获取1~5之间的随机整数，包含0包含5
+            console.log(parseInt(Math.random()*5)+1);
+            //获取1~100之间的随机整数，包含1包含100
+            console.log(pareseInt(Math.random()*100)+1);
+            
+            //向上取整 Math.ceil();
+            console.log(Math.ceil(12.3));//13
+            console.log(Math.ceil(12.9));//13
+            console.log(Math.ceil(12.03));//13
+            console.log(Math.ceil(12.993));//13
+            console.log(Math.ceil(12.09));//13
+            console.log(Math.ceil(12.93));//13
+            //向下取整Math.floor()
+            console.log(Math.floor(12.3));//12
+            console.log(Math.floor(12.9));//12
+            console.log(Math.floor(12.03));//12
+            console.log(Math.floor(12.993));//12
+            console.log(Math.floor(12.09));//12
+            console.log(Math.floor(12.93));//12
+
+            //求指数次幂Math.pow()
+            console.log(Math.pow(2,4));//16
+            //求平方根Math.sqrt()
+            consoel.log(Math.sqrt(16))//4
+
+            //四舍五入Math.round()
+            console.log(20.94);//21
+            console.log(20.09);//20
+            console.log(20.5);//21
+            consooe.log(20.49);//20
+
+            //日期对象Date
+            console.log(new Date());
+            //new Date() 获取系统日期：年 月 日 时 分 秒 星期几
+            var dt=new Date();
+            //获取年
+            var year = dt.getFullYear();
+            //获取月
+            var month = dt.getMonth() + 1;//月份是从0开始的
+            //获取天
+            var day = dt.getDate();
+        </script>
+    </body>
+</html>
