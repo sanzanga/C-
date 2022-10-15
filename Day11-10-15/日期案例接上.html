@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            // 定义一个函数，获取年、月、日、星期几
+            function dataTime(){
+                var dt = new Date();//系统自带
+                //获取年
+                var year = dt.getFullYear();
+                //获取月
+                var month = dt.getMonth() + 1;//月份是从0开始的
+                //获取天
+                var day = dt.getDate();
+                //获取星期
+                var week = dt.getDay();
+                //获取小时
+                var hours = dt.getHours();
+                //获取分钟
+                var minutes = dt.getMinutes();
+                //获取秒
+                var miao = dt.getSeconds();
+                switch(week){
+                    case 1:
+                        week="星期一";
+                    break;
+                    case 2:
+                        week="星期二";
+                    break;
+                    case 3:
+                        week="星期三";
+                    break;
+                    case 4:
+                        week="星期四";
+                    break;
+                    case 5:
+                        week="星期五";
+                    break;
+                    case 6:
+                        week="星期六";
+                    break;
+                    case 7:
+                        week="星期天";
+                    break;
+                }
+                //判断长度如果长度小于10前面补0----推荐用三元
+                month = month < 10 ? "0" + month: month;
+                day = day < 10 ? "0" + day: day;
+                mintues = mintues < 10 ? "0" + mintues: mintues;
+                hour = hour < 10 ? "0" + hour: hour;
+                miao = miao < 10 ? "0" + miao: miao;
+
+                return year+"年"+month+"月"+day+"日"+hours+"时"+minutes+"分"+miao+"秒"+week;
+            }
+            var result = dataTime();
+            console.log(result);
+        </script>
+    </body>
+</html>

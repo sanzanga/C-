@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //string是系统自带的内置对象
+            //.length---获取字符串的长度
+            var str = "dhas cjsioc";
+            console.log(str.length);
+            //.charAt(索引) 返回值是指定的索引位置的字符串，如果超出了，返回空字符串
+            var str1 = "what are you doing";
+            var str2 = str1.charAt(9);
+            console.log(str2);//拿到str1里面第九个位置的字符
+            str2 = str1.charAt(900);
+            console.log(str2);
+
+            //.fromCharCode(数字值，可以是多个) 返回的是ASCII码对应的值
+            var str3 = String.fromCharCode(66,65,67);
+            console.log(str3);
+
+            //.concat(字符串1，字符串2....) 返回拼接之后的新的字符串
+            var str4 = "我们";
+            var str5 = str1.concat("曾经","xacjsd","xjas");
+            console.log(str2);
+
+            //.indexOf(要找的字符串，是从什么位置开始) 返回的是这个字符串的索引，如果没有找到就返回-1，如果找到了就显示这个字符串的索引位置（注意：从什么位置开始是可以省略的
+            var str6 = "开心，快乐，月月，新技术，开心，张三，happy，开心，海皮";
+            var index = str6.indexOf("心");
+            var index = str6.indexOf("心",8);
+            console.log(index);
+
+            //.lastIndexOf();从后往前找，但是字符串的索引位置是从左往右查询的
+            var str7 = "hello world";
+            var index1 = str7.lastIndexOf("o");
+            console.log(index1);
+
+            //.replace("原来的字符串","新的字符串")  用来替换字符串
+            var str8 = "大家好，我是张三";
+            if(str8.indexOf("三") != -1){
+                str8 = str8.replace("三","四");
+            }
+            else{
+                console.log("没有找到这个字符串");
+            }
+            console.log(str8);
+
+            //.slice("开始的索引","结束的索引") 例如；从索引5的位置开始提取，到索引10的前一个结束，没有10（左开右闭） 返回提取后的字符串
+            var str9 = "hello world";
+            var str10 = str9.slice(4,8);
+            console.log(str10);
+            //若结束的索引不写，就直接提取到最后
+
+            //.split("以什么字符串拆分","拆分后留下的字符串的个数") 第二个参数是可以省略的，以什么字符串拆分，就是把字符串以指定的字符拆分成数组
+            var str11 = "张三|李四|王五|赵六";
+            var arr = str11.split("|");
+            console.log(arr);
+
+            //.substr(开始的位置，个数) 返回的是截取后新的字符串，个数也是可以省略的
+            var str12 = "hello world";
+            var str13 = str12.substr(2,6);
+            console.log(str13);
+
+            //.substring(开始的索引，结束的索引)  返回截取后的新的字符串，不包括结束索引
+            var str14 = "hello world";
+            var str15 = str14.substring(1,9);
+            console.log(str15);
+            //索引都是从0开始的
+
+            //.toLocaleLowerCase() 转换小写字母
+            //.toLowerCase() 转成小写字母 两种方法都可以
+            var str16 = "hELLo WorlD";
+            // var str17 = str16.toLocaleLowerCase();
+            str17=str16.toLowerCase();
+            console.log(str17);
+
+            //.toLocaleUpperCase() 转换成大写
+            //.toUpperCase() 转换成大写
+            // str17 = str16.toLocaleUpperCase();
+            str17 = str16.toUpperCase();
+            console.log(str17);
+
+            //.trim() 删除两端的空格，中间的空格是删除不了的
+            var str18 = "      我是   张三     ";
+            console.log(str18);
+            console.log(str18.trim());
+        </script>
+    </body>
+</html>
