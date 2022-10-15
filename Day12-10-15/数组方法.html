@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            // .push(值1，值2...) 把值往数组后面添加，返回值是追加之后的数组的长度
+            var arr1 = [10,20,30,40,50];
+            var result1 = arr1.push(100,200);
+            console.log(result1);
+            console.log(arr1);
+
+            // .unshift(值1，值2...) 把值往数组前面添加，返回值是追加之后的数组的长度
+            var arr2 = [10,20,30,40,50];
+            var result2 = arr2.unshift(100,200);
+            console.log(result2);
+            console.log(arr2);
+
+            // .pop() 删除数组的最后一项，返回值是删除的那一项
+            var arr3 = [10,200,30,40,50];
+            var result3 = arr3.pop();
+            console.log(result3);
+            console.log(arr3);
+
+            // .shift() 删除数组的第一项，返回值是删除的那一项
+            var arr4 = [10,200,30,40,50];
+            var result4 = arr4.shift();
+            console.log(result4);
+            console.log(arr4);
+
+            // .reverse() 数组反转，返回值是反转之后的数组
+            var arr5 = [10,20,30,40,50];
+            var temp = arr5.reverse();
+            console.log(temp);
+
+            // .sort() 数组排序---如果没有参数，只能排序10以内的数字（如果超过了10，或者说是任意的参数，那么就要传递一个参数，一个参数叫做回调函数，其实就是一个匿名函数
+            var arr6 = [1,2,5,7,8,9,3,4,6];
+            var temp1 = arr6.sort();
+            console.log(temp1);
+            //回调函数---匿名函数
+            var arr7 = [30,594,20,40,10,50];
+            var temp2 = arr7.sort(function(a,b){//匿名函数
+                return a - b;//如果是a-b就表示从小到大
+            })
+            console.log(temp2);
+            temp2 = arr7.sort(function(a,b){
+                return b - a;//从大到小
+            })
+            console.log(temp2);
+
+            // .slice(n,m) 从索引n开始获取索引m（不包含m） 返回值是获取到的元素组成的新的数组
+            var arr7 = [10,20,30,40,50,60,70,80];
+            var temp3 = arr7.slice(2,7);
+            console.log(temp3);
+
+            // .splice(n,m,z/y/z) 把数组从索引n开始删除m个元素，用x,y,z替换删除项，返回值是删除的m项的新数组
+            var arr8 = [1,2,3,4,5,6,7,8,9];
+            var temp4 = arr8.splice(2,2,7,8,9);
+            console.log(temp4);
+            console.log(arr8);
+            console.log("==========================");
+            //当m项是0的时候，是把x,y,z....替换放到索引n的前面-----添加
+            var arr9 = [1,2,3,4,5,6,7];
+            var temp5 = arr9.splice(2,0,7,8,9);
+            console.log(temp5);
+            console.log(arr9);
+            console.log("==========================");
+            //当不写x,y,z...替换项的时候，代表删除数组的元素
+            var arr10 = [1,2,3,4,5,6,7,8];
+            var temp5 = arr10.splice(2,2);
+            console.log(temp5);
+            console.log(arr10);
+            console.log("==========================");
+            //当splice()里面什么也不写的时候，代表没有对数组进行任何的操作，返回的是一个空的数组
+            var arr11 = [1,2,3,4,5,6,7,8];
+            var temp6 = arr11.splice();
+            console.log(temp6);
+            console.log(arr11);
+            console.log("==========================");
+            //当splice(0) 里面是0，代表的是删除整个数组，返回的是原数组数据，原数组变成了空数组
+            var arr12 = [1,2,3,4,5,6,7,8];
+            var temp7 = arr12.splice(0);
+            console.log(temp7);
+            console.log(arr12);
+        </script>
+    </body>
+</html>

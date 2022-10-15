@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <script>
+            //我们前面学习的创建数组的方式是通过字面量创建数组
+            //创建方式有两种
+            //第一种：字面量方式
+            var arr = [];//空数组
+            var arr = [10,20,30];//通过字面量的方式创建数组
+            //第二种方式：内置构造函数方式，new创建
+            var array = new Array(10,20,30,40);
+            console.log(array);
+            console.log(array.length);
+            console.log(array[2]);
+            //第二种创建数组的方式和第一种创建的方式几乎是相同的，只有一种特殊的情况比较特殊
+            var ary = [6];
+            console.log(ary.length);//1
+
+            var ary2 = new Array(6);
+            console.log(ary2.length);//6
+            console.log(ary2);//6个empty
+            ary[0] = 1;
+            ary[1] = 2;
+            ary[2] = 3;
+            ary[3] = 4;
+            ary[4] = 5;
+            ary[5] = 6;//有则改，无则加
+            console.log(ary2);
+
+        </script>
+    </body>
+</html>
