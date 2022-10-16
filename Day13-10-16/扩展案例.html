@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            #div1{
+                width: 300px;
+                height: 200px;
+                background-color: pink;
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="隐藏" id="btn1">
+        <input type="button" value="显示" id="btn2">
+        <div id="div1"></div>
+
+        <script>
+            //获取事件源
+            var btn1 = document.getElementById("btn1");
+            var btn2 = document.getElementById("btn2");
+            btn1.onclick = function(){
+                var div1 = document.getElementById("div1");
+                div1.style.display="none";//表示隐藏
+            }
+            btn2.onclick = function(){
+                var div1 = document.getElementById("div1");
+                div1.style.display = "block";
+            }
+            
+        </script>
+    </body>
+</html>

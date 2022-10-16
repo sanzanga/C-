@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="修改p标签的内容" id="btn">
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <p>hhhhhhhhhhhhhhhhh</p>
+        <script>
+            //获取事件源
+            var btn = document.getElementById("btn");
+
+            btn.onclick = function(){
+                // alert("123");
+                var pObjs = document.getElementsByTagName("p");//获取了所有的p标签，是一个集合/伪数组
+                // console.log(pObjs);
+                for (var i =0 ;i<pObjs.length;i++){
+                    pObjs[i].innerText="2222222222222222222222";
+                }
+            }
+            // getElementsByTagName("标签")----获取元素是一个集合（伪数组），就算获取的是一个标签，结果也是一个集合
+        </script>
+    </body>
+</html>

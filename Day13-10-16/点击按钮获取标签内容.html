@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="修改p标签里面的内容" id="btn">
+        <p id="p1">我是段落标签</p>
+        <script>
+            //获取事件源
+            var btn = document.getElementById("btn");
+            var p1 = document.getElementById("p1");
+            btn.onclick = function(){
+                // alert("123");
+                p1.innerText="修改标签内容";
+            }
+            // 我们只要修改一对标签里面的内容，我们都是用innerText（后面还会讲解到innerHTML
+        </script>
+    </body>
+</html>

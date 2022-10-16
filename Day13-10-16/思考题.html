@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="点击修改第一组p标签内容" id="btn">
+        <div id="div1">
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+            <p>我是第一组p标签</p>
+        </div>
+        <div id="div2">
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+            <p>我是第二组p标签</p>
+        </div>
+
+        <script>
+            //获取事件源
+            var btn = document.getElementById("btn");
+            //事件源.事件 function(){要执行的代码}
+            btn.onclick = function(){
+                //获取到第一组的所有p标签
+                var pObjs = document.getElementById("div1").getElementsByTagName("p");
+                for(var i=0;i<pObjs.length;i++){
+                    pObjs[i].innerText = "第一组p标签内容被修改";
+                }
+            }
+        </script>
+    </body>
+</html>

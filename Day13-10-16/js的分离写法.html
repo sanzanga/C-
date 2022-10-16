@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <script>
+            window.onload = function(){//js的入口函数
+                var btn = document.getElementById("btn");//获取事件源
+            /*
+                语法公式：
+                    事件源.事件 = function(){//匿名函数/回调函数
+                        要执行的代码
+                    }
+            */
+           btn.onclick = function(){
+                alert("实现html和js相分离");
+           }
+            }
+        //    如果要把js代码放在上面，要加入口函数，当看到window就不会执行里面的代码，会执行执行dom
+        </script>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <!-- <button onclick="fun()">点击</button>
+        <script>
+            function fun(){
+                alert("我是内嵌式js写法");//这样写会出现重复，要求实现html和js的分离
+            }
+        </script> -->
+        <!-- 我们工作里面需要html和js相分离 -->
+        <button id="btn">内嵌式</button>
+        
+        <!-- 工作经验：把js代码直接放到/body上面就可以了，但是有些人会把js代码放到整个html下面（这种方式，浏览器会自动将js的代码放到/body上面，最终还是在/body的上面） -->
+    </body>
+</html>

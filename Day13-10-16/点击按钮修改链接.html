@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="修改链接" id="btn">
+        <a href="https://www.jiumodiary.com" id="ak">鸠摩搜书</a>
+        <script>
+            var btn = document.getElementById("id");
+            btn.onclick = function(){
+                //获取a标签
+                var aObj = document.getElementById("ak");
+                aObj.href = "http://www.zztion.com";
+                aObj.innerText="中职通";
+            }
+        </script>
+    </body>
+</html>

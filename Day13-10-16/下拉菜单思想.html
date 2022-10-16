@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!-- 声明一个html5系列的文档类型标准-->
+<html>
+<!--根标签-->
+    <head>
+    <!--头标签，不可视区域-->
+        <meta name="keywords" content="关键字">
+        <meta name="discription" content="网页的描述">
+        <meta charset="utf-8">
+        <!--指定编码为国际编码-->
+        <title>网页标题</title>
+        <style>
+            #dv{
+                width: 300px;
+                height: 200px;
+                background-color: pink;
+                display: none;
+                /* 先通过css进行隐藏 */
+            }
+        </style>
+    </head>
+    <body>
+    <!--网页的主体部分-->
+        <input type="button" value="显示" id="btn">
+        <div id="dv"></div>
+        <script>
+            //获取事件源
+            var btn = document.getElementById("btn");
+            btn.onclick = function(){
+                var dv = document.getElementById("dv");
+                dv.style.display = "block";//表示显示
+            }
+            btn.onmouseout = function(){
+                var dv = document.getElementById("dv");
+                dv.style.display = "none";//表示隐藏
+            }
+            //关闭二维码，关闭广告都是这个意思，下拉菜单也就是这个意思
+        </script>
+    </body>
+</html>
